@@ -1,42 +1,60 @@
 import React from "react";
 import styles from "@/style";
+import Image from "next/image";
+ import hero from "public/hero.svg"
+import Button from "../shared/Button";
 
 const Hero = () => {
   return (
     <section className="w-5/6 mx-auto">
-      <div className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+      <div
+        className={`flex lg:flex-row flex-col lg:items-center gap-16 lg:gap-10 ${styles.paddingY}`}
+      >
         {/* words section */}
 
         <div
-          className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 `}
+          className={`flex-1 ${styles.flexStart} flex-col xl:px-0 md:px-16 `}
         >
-          <div className="py-[6px] px-[4px] mb-2">
-            <p className={`font-semibold tracking-wider text-[20px]`}>
+          <div className="py-[6px] px-[4px] ">
+            <p className={` tracking-wider text-[20px]`}>
               Hello I am
             </p>
           </div>
 
-     
-
           {/* name */}
 
           <div className="">
-            <h1 className=" font-bold font-poppins md:text-[72px] text-[52px] md:leading-[100px] leading-[72px]">
+            <h1 className=" font-bold font-poppins md:text-[72px] text-[42px] md:leading-[100px] leading-[72px]">
               Brian Musili
             </h1>
 
-            <br />
+        
 
-            <h1 className=" font-semibold font-poppins md:text-[32px] text-[22px] md:leading-[50px] leading-[32px]">
+            <h1 className=" font-semibold font-poppins md:text-[27px] text-[18px] md:leading-[50px] leading-[32px]">
               Full Stack developer || <br />{" "}
               <span className="text-secondary-100">UX Designer</span>
             </h1>
           </div>
 
+          <br />
 
           {/* CTA */}
 
-          <div></div>
+          <div className="flex gap-8 items-center  lg:mt-4">
+            <div>
+              <Button text="Linkedin" />
+            </div>
+            <div>
+              <Button text="Github" />
+            </div>
+          </div>
+        </div>
+
+        {/* image section */}
+
+        <div className="flex-1 md:px-16 lg:px-0">
+          {/* <Image src ={video} alt="video" /> */}
+          <Image src={hero} alt="home" />
         </div>
       </div>
     </section>

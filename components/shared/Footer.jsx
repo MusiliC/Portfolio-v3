@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <section className="bg-primary-100">
       <section
-        className={`${styles.flexCenter}  ${styles.paddingY} w-5/6 mx-auto `}
+        className={`${styles.flexCenter}  pt-4 w-5/6 mx-auto `}
       >
-        <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
+        <div className={`${styles.flexStart} gap-6 md:flex-row flex-col mb-8 w-full`}>
           {/* phone number and email */}
           <div className="flex flex-col  justify-start flex-1 mr-10 ">
             <p className={`${styles.paragraph} mt-4 text-white max-w-[310px]`}>

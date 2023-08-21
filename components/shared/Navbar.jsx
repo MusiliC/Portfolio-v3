@@ -25,7 +25,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px]  ${
-                  i === navLinks.length - 1 ? "mr-0" : "mr-10"
+                  i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
                 }`}
               >
                 <Link href={`${nav.id}`}>{nav.title}</Link>

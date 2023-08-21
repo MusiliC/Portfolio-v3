@@ -13,11 +13,7 @@ module.exports = {
         "secondary-100": "#FC4F00",
         "secondary-500": "#FFFBEB",
       },
-      screens: {
-        xs: "480px",
-        sm: "768px",
-        md: "1060px",
-      },
+      
     },
   },
   plugins: [],

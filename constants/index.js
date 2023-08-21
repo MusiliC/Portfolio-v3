@@ -1,3 +1,5 @@
+import approve from "public/approve.png"
+
 export const navLinks = [
   {
     id: "/",
@@ -73,3 +75,23 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const services = [
+  {
+    title: "Web and Mobile App Development",
+    icon: approve
+  },
+  {
+    title: "Responsive Web Design",
+    icon: approve
+  },
+  {
+    title: "UX Design",
+    icon: approve
+  },
+  {
+    title: "Software Development",
+    icon: approve
+  },
+
+]
