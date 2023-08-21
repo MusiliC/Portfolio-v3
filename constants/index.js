@@ -1,4 +1,6 @@
 import approve from "public/approve.png"
+import web from "public/web.jpg"
+import ux from "public/ux.jpg"
 
 export const navLinks = [
   {
@@ -94,4 +96,15 @@ export const services = [
     icon: approve
   },
 
+]
+
+export const projectCards = [
+  {
+    title: "Web Projects",
+    image: web
+  },
+  {
+    title: "Design Projects",
+    image: ux
+  },
 ]

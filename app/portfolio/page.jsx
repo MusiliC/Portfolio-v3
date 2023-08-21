@@ -1,8 +1,11 @@
+import PortfolioComponent from '@/components/portfolio/Portfolio'
 import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div>
+      <PortfolioComponent/>
+    </div>
   )
 }
 

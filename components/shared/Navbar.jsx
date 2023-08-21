@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className="w-5/6 mx-auto">
+    <section className="w-5/6 mx-auto py-2">
       <nav className="flex items-center justify-between w-full py-6">
         {/* logo */}
         <div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } p-6 bg-secondary-100  absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
+            } p-6 bg-secondary-100  absolute z-30 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
           >
             <ul className="flex flex-col items-center justify-end flex-1 list-none">
               {navLinks.map((nav, i) => (
