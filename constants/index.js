@@ -1,6 +1,26 @@
-import approve from "public/approve.png"
-import web from "public/web.jpg"
-import ux from "public/ux.jpg"
+import approve from "public/approve.png";
+import web from "public/web.jpg";
+import ux from "public/ux.jpg";
+
+//tools
+
+import react from "public/react.svg";
+import adobe from "public/adobe.svg";
+import css from "public/css.svg";
+import figma from "public/figma.svg";
+import git from "public/git.svg";
+import html from "public/html.svg";
+import java from "public/java.svg";
+import js from "public/js.svg";
+import maven from "public/maven.png";
+import mongo from "public/mongo.svg";
+import mysql from "public/mysql.svg";
+import NextJS from "public/NextJS.svg";
+import node from "public/node.svg";
+import redux from "public/redux.svg";
+import springBoot from "public/springBoot.svg";
+import tailwind from "public/tailwind.svg";
+import ts from "public/ts.svg";
 
 export const navLinks = [
   {
@@ -81,30 +101,96 @@ export const footerLinks = [
 export const services = [
   {
     title: "Web and Mobile App Development",
-    icon: approve
+    icon: approve,
   },
   {
     title: "Responsive Web Design",
-    icon: approve
+    icon: approve,
   },
   {
     title: "UX Design",
-    icon: approve
+    icon: approve,
   },
   {
     title: "Software Development",
-    icon: approve
+    icon: approve,
   },
-
-]
+];
 
 export const projectCards = [
   {
     title: "Web Projects",
-    image: web
+    image: web,
   },
   {
     title: "Design Projects",
-    image: ux
+    image: ux,
   },
-]
+];
+
+export const tools = [
+  {
+    name: "Javascript",
+    icon: js,
+  },
+  {
+    name: "React",
+    icon: react,
+  },
+  {
+    name: "Next JS",
+    icon: NextJS,
+  },
+  {
+    name: "Node JS",
+    icon: node,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Redux",
+    icon: redux,
+  },
+  {
+    name: "MongoDB",
+    icon: mongo,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Html",
+    icon: html,
+  },
+  {
+    name: "CSS",
+    icon: css,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Spring boot",
+    icon: springBoot,
+  },
+  {
+    name: "Apache Maven",
+    icon: maven,
+  },
+  {
+    name: "Adobe XD",
+    icon: adobe,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+];
