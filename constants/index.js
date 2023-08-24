@@ -22,6 +22,8 @@ import springBoot from "public/springBoot.svg";
 import tailwind from "public/tailwind.svg";
 import ts from "public/ts.svg";
 
+//design projects
+
 export const navLinks = [
   {
     id: "/",
@@ -39,10 +41,10 @@ export const navLinks = [
     id: "articles",
     title: "Articles",
   },
-  {
-    id: "blogs",
-    title: "Blogs",
-  },
+  // {
+  //   id: "blogs",
+  //   title: "Blogs",
+  // },
 ];
 
 export const footerLinks = [
@@ -61,10 +63,10 @@ export const footerLinks = [
         name: "Portfolio",
         link: "/portfolio",
       },
-      {
-        name: "Blogs",
-        link: "/blogs",
-      },
+      // {
+      //   name: "Blogs",
+      //   link: "/blogs",
+      // },
       {
         name: "Articles",
         link: "/articles",
@@ -146,7 +148,7 @@ export const tools = [
     icon: node,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: tailwind,
   },
   {
@@ -192,5 +194,53 @@ export const tools = [
   {
     name: "Figma",
     icon: figma,
+  },
+];
+
+
+export const designProjects = [
+  {
+    image: ux,
+    name: "EOE Foundation",
+    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and " 
+  },
+  {
+    image: ux,
+    name: "Personal Website",
+    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and " 
+  },
+]
+
+export const webProjects = [
+  {
+    image: ux,
+    name: "EOE Foundation",
+    desc: "We conceptualised and designed PAUSE,  ",
+    link: "project link"
+  },
+  {
+    image: ux,
+    name: "Personal Website",
+    desc: "We conceptualised and designed ",
+    link: "project Link"
+  },
+  {
+    image: ux,
+    name: "KUSA System",
+    desc: "We conceptualised and designed ",
+    link: "project Link"
+  },
+];
+
+export const articles = [
+  {
+    image: ux,
+    name: "EOE Foundation",
+    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and ",
+  },
+  {
+    image: ux,
+    name: "Personal Website",
+    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and ",
   },
 ];

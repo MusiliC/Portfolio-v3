@@ -14,3 +14,7 @@ body,
   font-family: "DM Sana", sans-serif;
   @apply text-primary-100; 
 }
+
+.formInput{
+  @apply p-3 text-sm outline-none bg-transparent border border-gray-100 rounded-sm;
+}

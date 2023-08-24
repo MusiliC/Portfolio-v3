@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Musili from "public/try.png";
 import Button from "../shared/Button";
+import { tools } from "@/constants";
 
 const AboutComponent = () => {
   return (
@@ -36,7 +37,7 @@ const AboutComponent = () => {
         </div>
 
         {/* about me */}
-        <div className={` md:w-5/6 lg:w-2/3  mx-auto`}>
+        <div className={`${styles.paddingY} md:w-5/6 lg:w-2/3  mx-auto`}>
           <p className={`${styles.paragraph} `}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
             similique sunt numquam temporibus amet, reiciendis fugit rerum quia
@@ -44,7 +45,6 @@ const AboutComponent = () => {
             dignissimos aspernatur magni? Nisi velit veniam dicta neque culpa
             alias numquam, assumenda mollitia provident, cum facere incidunt
             voluptatibus reprehenderit labore perferendis fuga veritatis! Lorem
-           
           </p>
           <br />
 
@@ -60,9 +60,28 @@ const AboutComponent = () => {
       </section>
 
       {/* skills and experience */}
-      <section className={`${styles.paddingY} bg-secondary-500`}>
-        <div className={`${styles.paddingY} w-5/6 mx-auto`}>
-          <p>skills and experience</p>
+      <section className={`${styles.paddingY}  bg-secondary-500`}>
+        <div
+          className={`${styles.paddingY} flex flex-col gap-5 items-center md:flex-row w-5/6 mx-auto`}
+        >
+          {/* stack tech */}
+          <div
+            className={`${styles.paddingY} flex-1 grid grid-cols-3 lg:grid-cols-4 justify-between  gap-5`}
+          >
+            {tools.map((tool) => (
+              <div key={tool.name} className="flex  items-center flex-col">
+                <Image
+                  src={tool.icon}
+                  alt={tool.name}
+                  className="h-[40px] w-[40px]  object-cover"
+                />
+                <p className={`${styles.paragraph}`}>{tool.name}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* experience level */}
+          <div className="flex-1"></div>
         </div>
       </section>
     </>
