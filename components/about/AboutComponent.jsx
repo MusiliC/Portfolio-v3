@@ -44,22 +44,23 @@ const AboutComponent = () => {
         {/* about me */}
         <div className={`${styles.paddingY} md:w-5/6 lg:w-2/3  mx-auto`}>
           <p className={`${styles.paragraph} `}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-            similique sunt numquam temporibus amet, reiciendis fugit rerum quia
-            placeat eos magnam eius vitae corporis aliquam commodi ut
-            dignissimos aspernatur magni? Nisi velit veniam dicta neque culpa
-            alias numquam, assumenda mollitia provident, cum facere incidunt
-            voluptatibus reprehenderit labore perferendis fuga veritatis! Lorem
+            My name is Brian Musili a full stack developer/UX designer from
+            Nairobi, Kenya. I completed my studies at Dedan Kimathi University
+            of Technology where I pursued a degree in computer science. I
+            immersed myself in web development field, focusing Javascript as my
+            primary tool of programming. With experience in React JS and Next JS
+            I leverage to build robust and responsive front-end interfaces and
+            complementing my projects with Node JS on the backend
           </p>
           <br />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero hic
-            maxime, assumenda cupiditate odio quas dolores eius corporis,
-            suscipit in similique dolore possimus praesentium, odit ullam! Dolor
-            nihil cupiditate odit perspiciatis dolore eligendi voluptatibus
-            omnis, similique explicabo enim consequatur quibusdam ab labore
-            ullam, inventore vero deleniti nisi voluptatum recusandae? Sunt.
+            Driven by my passion for creating stunning interfaces, I enrolled in
+            a UX Design course on Coursera. This decision was motivated by my
+            desire to enhance my frontend skills, focusing on crafting
+            exceptional user experiences. My commitment to user-centered design
+            ensures that every interface I create  looks gorgeous resulting in
+            memorable and enjoyable digital interactions. 
           </p>
         </div>
       </section>
@@ -70,7 +71,9 @@ const AboutComponent = () => {
           <h1 className=" font-semibold font-poppins text-center md:text-[35px] text-[23px] md:leading-[50px] leading-[32px]">
             Skills & Experience
           </h1>
-          <p className={`${styles.paragraph} py-1 text-center`}  >Some of the skills and experience as I continue learning:</p>
+          <p className={`${styles.paragraph} py-1 text-center`}>
+            Some of the skills and experience as I continue learning:
+          </p>
         </div>
         <div
           className={`${styles.paddingY} flex flex-col gap-5 items-center md:flex-row w-5/6 mx-auto`}

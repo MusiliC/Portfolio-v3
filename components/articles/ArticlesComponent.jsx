@@ -31,7 +31,7 @@ const ArticlesComponent = () => {
               <Image
                 src={article.image}
                 alt={article.name}
-                className="h-[180px] md:h-[150px] w-full rounded-md  object-cover"
+                className="h-[180px] md:h-[150px] w-full rounded-md  object-contain"
               />
             </div>
           </div>

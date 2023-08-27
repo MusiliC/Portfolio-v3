@@ -1,6 +1,8 @@
 import approve from "public/approve.png";
 import web from "public/web.jpg";
 import ux from "public/ux.jpg";
+import atomic from "public/atomic.jpg"
+import mindset from "public/mindset.jpg"
 
 //tools
 
@@ -246,14 +248,14 @@ export const webProjects = [
 
 export const articles = [
   {
-    image: ux,
-    name: "EOE Foundation",
-    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and ",
+    image: atomic,
+    name: "Atomic Habits",
+    desc: "Habits are patterns of behavior that you’ve repeated enough to become automatic. The most helpful function of atomic habits is to solve the problems of your life with as little effort as possible. The science of habit formation involves four things.....",
   },
   {
-    image: ux,
-    name: "Personal Website",
-    desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and ",
+    image: mindset,
+    name: "Mindset the new psychology of success",
+    desc: "Mindset: The New Psychology of Success is a book by Carol S. Dweck about human thoughts, and how these thoughts can greatly influence the way we live our everyday lives. This book is written in the form of a self-help book, so readers will find many interesting and educational tidbits of advice on how to live the best life possible....",
   },
 ];
 
