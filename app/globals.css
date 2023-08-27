@@ -16,5 +16,5 @@ body,
 }
 
 .formInput{
-  @apply p-3 text-sm outline-none bg-transparent border border-gray-100 rounded-sm;
+  @apply p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm;
 }

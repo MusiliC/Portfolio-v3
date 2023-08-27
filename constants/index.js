@@ -24,6 +24,11 @@ import ts from "public/ts.svg";
 
 //design projects
 
+//contact icons
+import mail from "public/mail.png"
+import location from "public/location.png"
+import phone from "public/phone.png"
+
 export const navLinks = [
   {
     id: "/",
@@ -152,6 +157,10 @@ export const tools = [
     icon: tailwind,
   },
   {
+    name: "Typescript",
+    icon: ts,
+  },
+  {
     name: "Redux",
     icon: redux,
   },
@@ -195,6 +204,7 @@ export const tools = [
     name: "Figma",
     icon: figma,
   },
+
 ];
 
 
@@ -244,3 +254,18 @@ export const articles = [
     desc: "We conceptualised and designed PAUSE,  a symptom tracking application for women who are trying to understand what is happening in their bodies. Many women are experiencing symptoms that have a huge overlap in both Long COVID and ",
   },
 ];
+
+export const contactIcons = [
+  {
+    icon: location,
+    name: "Nairobi, Kenya",
+      },
+  {
+    icon: mail,
+    name: "musilibrian07@gmail.com",
+      },
+  {
+    icon: phone,
+    name: "+254768687334",
+      },
+]

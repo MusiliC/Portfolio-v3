@@ -30,7 +30,7 @@ const AboutComponent = () => {
 
         {/* image */}
         <div className={`${styles.flexCenter} flex-col gap-5 mt-12 my-10`}>
-          <Image src={Musili} alt="Musili" className="rounded-full" />
+          <Image src={Musili} alt="Musili" className="rounded-full h-[320px] w-[320px] object-cover" />
           <div>
             <Button text="Resume" />
           </div>

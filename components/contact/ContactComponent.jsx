@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import contact from "public/contact.jpg";
 import Button from "../shared/Button";
+import { contactIcons } from "@/constants";
 
 const ContactComponent = () => {
   return (
@@ -13,20 +14,29 @@ const ContactComponent = () => {
         <div
           className={`${styles.paddingY}  bg-secondary-500 px-5 rounded-sm  lg:w-1/2 ml-auto`}
         >
-          <h1 className=" font-bold font-poppins md:text-[72px] text-[42px] md:leading-[100px] leading-[60px]">
+          <h1 className=" font-bold font-poppins md:text-[52px] text-[32px] md:leading-[70px] leading-[40px]">
             Let's <br /> Connect
           </h1>
         </div>
 
-        <div className={`${styles.paddingY} flex md:flex-row flex-col gap-10 lg:gap-2`}>
+        <div
+          className={`${styles.paddingY} flex md:flex-row flex-col gap-5 lg:gap-2`}
+        >
           {/* image */}
-          <div className="flex-1">
-            <Image src={contact} alt="musili" className="h-[500px] w-[400px]" />
+          <div className="flex-1 ">
+            <Image
+              src={contact}
+              alt="musili"
+              className=" md:h-[500px] object-cover  md:w-[400px]"
+            />
           </div>
 
           {/* form */}
           <div className="flex-1">
-            <form action="" className="w-full flex flex-col gap-4">
+            <form
+              action=""
+              className="w-full md:h-[500px] flex flex-col gap-2 md:gap-4"
+            >
               <input type="text" className="formInput" placeholder="Name" />
               <input type="text" className="formInput" placeholder="Email" />
               <input type="text" className="formInput" placeholder="Subject" />
@@ -34,6 +44,7 @@ const ContactComponent = () => {
                 name=""
                 placeholder="Message Body"
                 id=""
+                className=" p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm"
                 cols="30"
                 rows="10"
               ></textarea>
@@ -43,6 +54,25 @@ const ContactComponent = () => {
               </div>
             </form>
           </div>
+        </div>
+
+        <div
+          className={` ${styles.paddingY} w-full gap-2 flex flex-wrap justify-around md:justify-between items-center`}
+        >
+          {contactIcons.map((item) => (
+            <div
+              className={ `${styles.paddingY}  flex flex-col gap-2 items-center`}
+            >
+              <div className="w-[80px] flex items-center justify-center h-[80px] bg-secondary-500 rounded-full">
+                <Image src={item.icon} alt={item.name} />
+              </div>
+              <h1
+                className={`font-poppins text-[13px]  lg:text-[18px] tracking-wide lg:tracking-wider leading-[31px] font-semibold`}
+              >
+                {item.name}
+              </h1>
+            </div>
+          ))}
         </div>
       </div>
     </section>
