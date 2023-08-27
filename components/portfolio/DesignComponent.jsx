@@ -5,7 +5,7 @@ import DesignCard from "../card/DesignCard";
 
 const DesignComponent = () => {
   return (
-    <section className={`${styles.paddingY}  w-5/6 mx-auto`}>
+    <section className={`${styles.paddingY}  lg:w-5/6 mx-auto`}>
       <div className={`${styles.paddingY} grid md:grid-cols-2 gap-10`}>
         {designProjects.map((project) => (
           <div key={project.name}>

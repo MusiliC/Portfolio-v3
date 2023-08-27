@@ -12,7 +12,7 @@ const PortfolioComponent = () => {
       >
         {projectCards.map((project) => (
           <>
-            <Link key={project.title} href={`/portfolio/${project.to}`}>
+            <Link key={project.title} href={`portfolio/${project.to}`}>
               <div className="">
                 <ProjectsCardComponent
                   title={project.title}
