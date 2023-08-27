@@ -269,3 +269,34 @@ export const contactIcons = [
     name: "+254768687334",
       },
 ]
+
+export const experienceLevel = [
+  {
+    name: "Javascript",
+    level: "80%"
+  },
+  {
+    name: "React",
+    level: "90%"
+  },
+  {
+    name: "Node JS",
+    level: "70%"
+  },
+  {
+    name: "CSS(Tailwind CSS)",
+    level: "90%"
+  },
+  {
+    name: "Java",
+    level: "50%"
+  },
+  {
+    name: "Git",
+    level: "70%"
+  },
+  {
+    name: "UX Design",
+    level: "70%"
+  },
+]

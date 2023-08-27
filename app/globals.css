@@ -18,3 +18,11 @@ body,
 .formInput{
   @apply p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm;
 }
+
+.progressBar{
+  @apply bg-primary-500  rounded-md p-0.5  text-center text-xs font-medium leading-none text-primary-100;
+}
+
+.progressContainer{
+  @apply w-full bg-neutral-200 rounded-md;
+}

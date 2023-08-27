@@ -4,6 +4,7 @@ import React from "react";
 import Musili from "public/try.png";
 import Button from "../shared/Button";
 import { tools } from "@/constants";
+import Experience from "./Experience";
 
 const AboutComponent = () => {
   return (
@@ -30,7 +31,11 @@ const AboutComponent = () => {
 
         {/* image */}
         <div className={`${styles.flexCenter} flex-col gap-5 mt-12 my-10`}>
-          <Image src={Musili} alt="Musili" className="rounded-full h-[320px] w-[320px] object-cover" />
+          <Image
+            src={Musili}
+            alt="Musili"
+            className="rounded-full h-[320px] w-[320px] object-cover"
+          />
           <div>
             <Button text="Resume" />
           </div>
@@ -61,12 +66,18 @@ const AboutComponent = () => {
 
       {/* skills and experience */}
       <section className={`${styles.paddingY}  bg-secondary-500`}>
+        <div className="w-5/6 mx-auto">
+          <h1 className=" font-semibold font-poppins text-center md:text-[35px] text-[23px] md:leading-[50px] leading-[32px]">
+            Skills & Experience
+          </h1>
+          <p className={`${styles.paragraph} py-1 text-center`}  >Some of the skills and experience as I continue learning:</p>
+        </div>
         <div
           className={`${styles.paddingY} flex flex-col gap-5 items-center md:flex-row w-5/6 mx-auto`}
         >
           {/* stack tech */}
           <div
-            className={`${styles.paddingY} flex-1 grid grid-cols-3 lg:grid-cols-4 justify-between  gap-5`}
+            className={`${styles.paddingY} w-full md:w-[50%] lg:w-[40%] grid grid-cols-3 lg:grid-cols-4 justify-between  gap-5`}
           >
             {tools.map((tool) => (
               <div key={tool.name} className="flex  items-center flex-col">
@@ -81,7 +92,9 @@ const AboutComponent = () => {
           </div>
 
           {/* experience level */}
-          <div className="flex-1"></div>
+          <div className="w-full md:w-[50%] lg:w-[57%] mx-auto  lg:h-[400px]">
+            <Experience />
+          </div>
         </div>
       </section>
     </>
