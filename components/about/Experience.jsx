@@ -9,8 +9,8 @@ const Experience = () => {
         <div>
           <p className={`${styles.paragraph}`}>Javascript</p>
           <div className="progressContainer">
-            <div className="progressBar" style={{ width: "80%" }}>
-              <p>80%</p>
+            <div className="progressBar" style={{ width: "90%" }}>
+              <p>90%</p>
             </div>
           </div>
         </div>
@@ -30,8 +30,8 @@ const Experience = () => {
         <div className="">
           <p className={`${styles.paragraph}`}>Node JS</p>
           <div className="progressContainer">
-            <div className="progressBar" style={{ width: "70%" }}>
-              <p>70%</p>
+            <div className="progressBar" style={{ width: "75%" }}>
+              <p>75%</p>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ const Experience = () => {
         <div className="">
           <p className={`${styles.paragraph}`}>Git</p>
           <div className="progressContainer">
-            <div className="progressBar" style={{ width: "70%" }}>
-              <p>70%</p>
+            <div className="progressBar" style={{ width: "75%" }}>
+              <p>75%</p>
             </div>
           </div>
 
@@ -77,8 +77,8 @@ const Experience = () => {
         <div className="">
           <p className={`${styles.paragraph}`}>UX Design</p>
           <div className="progressContainer">
-            <div className="progressBar" style={{ width: "70%" }}>
-              <p>70%</p>
+            <div className="progressBar" style={{ width: "75%" }}>
+              <p>75%</p>
             </div>
           </div>
         </div>

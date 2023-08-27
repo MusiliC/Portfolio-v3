@@ -128,10 +128,12 @@ export const projectCards = [
   {
     title: "Web Projects",
     image: web,
+    to: "projects"
   },
   {
     title: "Design Projects",
     image: ux,
+    to: "designs"
   },
 ];
 
@@ -300,3 +302,5 @@ export const experienceLevel = [
     level: "70%"
   },
 ]
+
+

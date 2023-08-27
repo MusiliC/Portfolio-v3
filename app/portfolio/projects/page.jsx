@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
+  return <div className="min-h-[70vh] lg:min-h-[85vh] ">Projects</div>;
 }
 
 export default Projects
