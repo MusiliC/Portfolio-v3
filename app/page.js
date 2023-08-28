@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-[70vh] pt-28  lg:pt-36 lg:min-h-[10vh]  ">
+    <main className="min-h-[70vh] pt-28  lg:pt-32 lg:min-h-[10vh]  ">
       <Hero/>
       <Me/>
       <Service/>

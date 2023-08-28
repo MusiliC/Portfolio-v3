@@ -23,11 +23,11 @@ const Hero = () => {
           {/* name */}
 
           <div className="">
-            <h1 className=" font-bold font-poppins md:text-[72px] text-[42px] md:leading-[100px] leading-[72px]">
+            <h1 className=" font-bold font-poppins md:text-[62px] text-[32px] md:leading-[80px] leading-[52px]">
               Brian Musili
             </h1>
 
-            <h1 className=" font-semibold font-poppins md:text-[22px] text-[15px] md:leading-[50px] leading-[32px]">
+            <h1 className=" font-semibold font-poppins md:text-[22px] text-[15px] md:leading-[40px] leading-[22px]">
               Full Stack developer || <br />{" "}
               <span className="text-secondary-100">UX Designer</span>
             </h1>
