@@ -12,7 +12,7 @@ const Header = ({title}) => {
       />
 
       <div className="  px-6 py-2 absolute bottom-[100px] rounded-lg left-[30px] md:left-[60px] lg:left-[220px]">
-        <p className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-widest">
+        <p className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-widest">
           {title}
         </p>
      

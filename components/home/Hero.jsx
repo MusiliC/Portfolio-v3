@@ -27,7 +27,7 @@ const Hero = () => {
               Brian Musili
             </h1>
 
-            <h1 className=" font-semibold font-poppins md:text-[27px] text-[18px] md:leading-[50px] leading-[32px]">
+            <h1 className=" font-semibold font-poppins md:text-[22px] text-[15px] md:leading-[50px] leading-[32px]">
               Full Stack developer || <br />{" "}
               <span className="text-secondary-100">UX Designer</span>
             </h1>

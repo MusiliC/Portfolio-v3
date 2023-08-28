@@ -4,7 +4,7 @@ const Button = ({ text }) => {
   return (
     <p
       type="button"
-      className={`py-2.5 rounded-sm px-4 cursor-pointer bg-secondary-100 font-poppins  font-medium text-[16px] text-white outline-none `}
+      className={`py-2.5 text-sm rounded-sm px-4 cursor-pointer bg-secondary-100 font-poppins  font-medium text-[16px] text-white outline-none `}
     >
       {text}
     </p>

@@ -1,4 +1,5 @@
-""
+"use client";
+
 import styles from "@/style";
 import React from "react";
 import Button from "../shared/Button";
@@ -31,9 +32,9 @@ const Me = () => {
 
             {/* resume */}
             <div className="mt-4 flex">
-              <Link href="Musili_Resume.pdf" rel="noopener noreferrer">
+              <a href="Musili_Resume.pdf" rel="noopener noreferrer">
                 <Button text="Resume" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Service = () => {
       <div className="w-5/6 mx-auto md:px-16 lg:px-0 py-10 lg:py-16 flex lg:items-center flex-col lg:flex-row gap-10 lg:gap-20 ">
         {/* section one */}
         <div className="flex-1 flex flex-col gap-7 lg:w-5/6">
-          <h1 className=" font-semibold font-poppins md:text-[65px] text-[35px] md:leading-[80px] leading-[52px]">
+          <h1 className=" font-semibold font-poppins md:text-[55px] text-[25px] md:leading-[70px] leading-[42px]">
             Services I <br /> Offer
           </h1>
 
@@ -48,7 +48,7 @@ const Service = () => {
                     alt="approve"
                   />
                 </div>
-                <h1 className="font-semibold font-poppins md:text-[20px] text-[18px] ">
+                <h1 className="font-semibold font-poppins md:text-[18px] text-[16px] ">
                   {service.title}
                 </h1>
               </div>

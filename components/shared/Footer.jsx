@@ -32,7 +32,7 @@ const Footer = () => {
                 className="flex flex-col ss:my-0 my-4 min-w-[150px]"
               >
                 <h4
-                  className={`font-poppins font-medium text-[18px] leading-[27px] text-white `}
+                  className={`${styles.paragraph} text-white`}
                 >
                   {link.title}
                 </h4>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <Link href={eachLink.link}>
                       <li
                         key={eachLink.name}
-                        className={`font-poppins font-normal text-[16px] leading-[24px] text-white hover:text-secondary cursor-pointer mb-4`}
+                        className={`${styles.paragraph} py-1 text-white`}
                       >
                         {eachLink.name}
                       </li>
@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="flex pb-6 flex-col md:flex-row items-center justify-between w-full pt-0 md:flex-6  border-t-[1px] border-t-[#3f3r45]">
         <div className="w-5/6 mx-auto">
           <p
-            className={`font-poppins font-normal text-center text-[18px] mt-6 leading-[27px] text-white `}
+            className={`${styles.paragraph} text-center`}
           >
             @2023 Musili. Made from scratch. All rights reserved
           </p>

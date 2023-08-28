@@ -90,10 +90,10 @@ export const footerLinks = [
         name: "Portfolio",
         link: "/portfolio",
       },
-      // {
-      //   name: "Blogs",
-      //   link: "/blogs",
-      // },
+      {
+        name: "Blogs",
+        link: "#",
+      },
       {
         name: "Articles",
         link: "/articles",

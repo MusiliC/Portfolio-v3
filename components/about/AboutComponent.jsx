@@ -1,7 +1,7 @@
 import styles from "@/style";
 import Image from "next/image";
 import React from "react";
-import Musili from "public/try.png";
+import Musili from "public/cee.jpeg";
 import Button from "../shared/Button";
 import { tools } from "@/constants";
 import Experience from "./Experience";
@@ -16,7 +16,7 @@ const AboutComponent = () => {
           className={`${styles.flexCenter} flex-col gap-3 md:w-5/6 lg:w-2/3  mx-auto`}
         >
           <div>
-            <h1 className=" font-semibold font-poppins text-center md:text-[35px] text-[23px] md:leading-[50px] leading-[32px]">
+            <h1 className=" font-semibold font-poppins text-center md:text-[30px] text-[18px] md:leading-[40px] leading-[25px]">
               Full stack Developer <br /> UX Designer
             </h1>
           </div>

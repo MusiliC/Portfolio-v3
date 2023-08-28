@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <section className=" fixed top-0 z-30 bg-white shadow  w-full ">
       <div className="w-5/6 mx-auto py-2">
-        <nav className="flex items-center justify-between w-full py-6">
+        <nav className="flex items-center justify-between w-full py-4">
           {/* logo */}
           <div>
             <p className="font-semibold tracking-wider text-[20px]">Musili</p>
@@ -36,8 +36,8 @@ const Navbar = () => {
                     href={`${nav.id}`}
                     className={`${
                       activeLink === nav.id
-                        ? "border-b-[3px] border-primary-100"
-                        : ""
+                        ? "border-b-[3px] border-primary-100 text-sm"
+                        : "text-sm"
                     } `}
                   >
                     {nav.title}
