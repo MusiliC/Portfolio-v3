@@ -9,99 +9,100 @@ import close from "public/close.svg";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-
-    const activeLink = usePathname();
+  const activeLink = usePathname();
 
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className="w-5/6 mx-auto py-2">
-      <nav className="flex items-center justify-between w-full py-6">
-        {/* logo */}
-        <div>
-          <p className="font-semibold tracking-wider text-[20px]">Musili</p>
-        </div>
+    <section className=" fixed top-0 z-30 bg-white shadow  w-full ">
+      <div className="w-5/6 mx-auto py-2">
+        <nav className="flex items-center justify-between w-full py-6">
+          {/* logo */}
+          <div>
+            <p className="font-semibold tracking-wider text-[20px]">Musili</p>
+          </div>
 
-        {/* links */}
-        <div>
-          <ul className="items-center justify-end flex-1  hidden list-none md:flex">
-            {navLinks.map((nav, i) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px]  ${
-                  i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
-                }`}
-              >
-                <Link
-                  href={`${nav.id}`}
-                  className={`${
-                    activeLink === nav.id
-                      ? "border-b-[3px] border-primary-100"
-                      : ""
-                  } `}
-                >
-                  {nav.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* contact */}
-        <div className="hidden md:flex">
-          <Link href="/contact">
-            <Button text={"Contact Me"} />
-          </Link>
-        </div>
-
-        {/* mobile */}
-
-        <div className="flex justify-end flex-1 md:hidden">
-          {/* menu button */}
-
-          <Image
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain "
-            onClick={() => setToggle((prev) => !prev)}
-          />
-
-          {/* menu */}
-          <div
-            className={`${
-              toggle ? "flex" : "hidden"
-            } p-6 bg-secondary-100  absolute z-30 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
-          >
-            <ul className="flex flex-col items-center justify-end flex-1 list-none">
+          {/* links */}
+          <div>
+            <ul className="items-center justify-end flex-1  hidden list-none md:flex">
               {navLinks.map((nav, i) => (
-                <div key={nav.id}>
-                  <li
-                    className={`font-poppins font-normal tracking-wide cursor-pointer text-[16px] text-white mb-4`}
-                    onClick={() => setToggle(false)}
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-normal cursor-pointer text-[16px]  ${
+                    i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
+                  }`}
+                >
+                  <Link
+                    href={`${nav.id}`}
+                    className={`${
+                      activeLink === nav.id
+                        ? "border-b-[3px] border-primary-100"
+                        : ""
+                    } `}
                   >
-                    <Link
-                      href={`${nav.id}`}
-                      className={`${
-                        activeLink === nav.id
-                          ? "border-b-[3px] border-white"
-                          : ""
-                      } `}
-                    >
-                      {nav.title}
-                    </Link>
-                  </li>
-                </div>
+                    {nav.title}
+                  </Link>
+                </li>
               ))}
-              <li
-                onClick={() => setToggle(false)}
-                className="font-poppins font-normal cursor-pointer text-[16px] text-white "
-              >
-                <Link href={"/contact"}>Contact Me</Link>
-              </li>
             </ul>
           </div>
-        </div>
-      </nav>
+
+          {/* contact */}
+          <div className="hidden md:flex">
+            <Link href="/contact">
+              <Button text={"Contact Me"} />
+            </Link>
+          </div>
+
+          {/* mobile */}
+
+          <div className="flex justify-end flex-1 md:hidden">
+            {/* menu button */}
+
+            <Image
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain "
+              onClick={() => setToggle((prev) => !prev)}
+            />
+
+            {/* menu */}
+            <div
+              className={`${
+                toggle ? "flex" : "hidden"
+              } p-6 bg-secondary-100  absolute z-30 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
+            >
+              <ul className="flex flex-col items-center justify-end flex-1 list-none">
+                {navLinks.map((nav, i) => (
+                  <div key={nav.id}>
+                    <li
+                      className={`font-poppins font-normal tracking-wide cursor-pointer text-[16px] text-white mb-4`}
+                      onClick={() => setToggle(false)}
+                    >
+                      <Link
+                        href={`${nav.id}`}
+                        className={`${
+                          activeLink === nav.id
+                            ? "border-b-[3px] border-white"
+                            : ""
+                        } `}
+                      >
+                        {nav.title}
+                      </Link>
+                    </li>
+                  </div>
+                ))}
+                <li
+                  onClick={() => setToggle(false)}
+                  className="font-poppins font-normal cursor-pointer text-[16px] text-white "
+                >
+                  <Link href={"/contact"}>Contact Me</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
   );
 };
