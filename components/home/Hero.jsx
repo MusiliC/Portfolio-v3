@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "@/style";
 import Image from "next/image";
- import hero from "public/hero.svg"
+import hero from "public/hero.svg";
 import Button from "../shared/Button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,9 +17,7 @@ const Hero = () => {
           className={`flex-1 ${styles.flexStart} flex-col xl:px-0 md:px-16 `}
         >
           <div className="py-[6px] px-[4px] ">
-            <p className={` tracking-wider text-[20px]`}>
-              Hello I am
-            </p>
+            <p className={` tracking-wider text-[20px]`}>Hello I am</p>
           </div>
 
           {/* name */}
@@ -27,8 +26,6 @@ const Hero = () => {
             <h1 className=" font-bold font-poppins md:text-[72px] text-[42px] md:leading-[100px] leading-[72px]">
               Brian Musili
             </h1>
-
-        
 
             <h1 className=" font-semibold font-poppins md:text-[27px] text-[18px] md:leading-[50px] leading-[32px]">
               Full Stack developer || <br />{" "}
@@ -42,11 +39,23 @@ const Hero = () => {
 
           <div className="flex gap-8 items-center  lg:mt-4">
             <div>
-              <Button text="Linkedin" />
+              <Link
+                href="https://www.linkedin.com/in/brian-musili-405b1220a/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button text="Linkedin" />
+              </Link>
             </div>
-            <div>
-              <Button text="Github" />
-            </div>
+            <Link
+              href="https://github.com/MusiliC"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div>
+                <Button text="Github" />
+              </div>
+            </Link>
           </div>
         </div>
 

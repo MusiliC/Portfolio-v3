@@ -1,3 +1,4 @@
+""
 import styles from "@/style";
 import React from "react";
 import Button from "../shared/Button";
@@ -6,10 +7,7 @@ import Link from "next/link";
 const Me = () => {
   return (
     <section className=" flex justify-center items-center bg-primary-500 py-7">
-      <div
-        className={` gap-16 lg:gap-10 ${styles.paddingY}`}
-      >
-     
+      <div className={` gap-16 lg:gap-10 ${styles.paddingY}`}>
         <div className="w-5/6 lg:w-[70%] mx-auto">
           <div className="md:px-16 mx-auto lg:px-0 lg:w-5/6 flex gap-2  lg:items-center flex-col">
             {/* text */}
@@ -33,7 +31,9 @@ const Me = () => {
 
             {/* resume */}
             <div className="mt-4 flex">
-              <Button text="Resume" />
+              <Link href="Musili_Resume.pdf" rel="noopener noreferrer">
+                <Button text="Resume" />
+              </Link>
             </div>
           </div>
         </div>

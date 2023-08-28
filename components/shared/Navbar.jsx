@@ -6,8 +6,12 @@ import Link from "next/link";
 import Image from "next/image";
 import menu from "public/menu.svg";
 import close from "public/close.svg";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+
+    const activeLink = usePathname();
+
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -28,7 +32,16 @@ const Navbar = () => {
                   i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
                 }`}
               >
-                <Link href={`/${nav.id}`}>{nav.title}</Link>
+                <Link
+                  href={`${nav.id}`}
+                  className={`${
+                    activeLink === nav.id
+                      ? "border-b-[3px] border-primary-100"
+                      : ""
+                  } `}
+                >
+                  {nav.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -61,15 +74,23 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center justify-end flex-1 list-none">
               {navLinks.map((nav, i) => (
-                <>
+                <div key={nav.id}>
                   <li
-                    key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer text-[16px] text-white mb-4`}
+                    className={`font-poppins font-normal tracking-wide cursor-pointer text-[16px] text-white mb-4`}
                     onClick={() => setToggle(false)}
                   >
-                    <Link href={`${nav.id}`}>{nav.title}</Link>
+                    <Link
+                      href={`${nav.id}`}
+                      className={`${
+                        activeLink === nav.id
+                          ? "border-b-[3px] border-white"
+                          : ""
+                      } `}
+                    >
+                      {nav.title}
+                    </Link>
                   </li>
-                </>
+                </div>
               ))}
               <li
                 onClick={() => setToggle(false)}

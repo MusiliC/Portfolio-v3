@@ -57,15 +57,15 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "portfolio",
+    id: "/portfolio",
     title: "Portfolio",
   },
   {
-    id: "about",
+    id: "/about",
     title: "About Me",
   },
   {
-    id: "articles",
+    id: "/articles",
     title: "Articles",
   },
   // {
@@ -113,15 +113,15 @@ export const footerLinks = [
       },
       {
         name: "Twitter",
-        link: "/",
+        link: "#",
       },
       {
         name: "Instagram",
-        link: "/",
+        link: "#",
       },
       {
         name: "What's App",
-        link: "/",
+        link: "#",
       },
     ],
   },

@@ -5,6 +5,7 @@ import Musili from "public/try.png";
 import Button from "../shared/Button";
 import { tools } from "@/constants";
 import Experience from "./Experience";
+import Link from "next/link";
 
 const AboutComponent = () => {
   return (
@@ -37,7 +38,9 @@ const AboutComponent = () => {
             className="rounded-full h-[320px] w-[320px] object-cover"
           />
           <div>
-            <Button text="Resume" />
+            <Link href="Musili_Resume.pdf" rel="noopener noreferrer">
+              <Button text="Resume" />
+            </Link>
           </div>
         </div>
 
@@ -59,8 +62,8 @@ const AboutComponent = () => {
             a UX Design course on Coursera. This decision was motivated by my
             desire to enhance my frontend skills, focusing on crafting
             exceptional user experiences. My commitment to user-centered design
-            ensures that every interface I create  looks gorgeous resulting in
-            memorable and enjoyable digital interactions. 
+            ensures that every interface I create looks gorgeous resulting in
+            memorable and enjoyable digital interactions.
           </p>
         </div>
       </section>
@@ -76,7 +79,7 @@ const AboutComponent = () => {
           </p>
         </div>
         <div
-          className={`${styles.paddingY} flex flex-col gap-5 items-center md:flex-row w-5/6 mx-auto`}
+          className={`${styles.paddingY} flex flex-col gap-5 items-center md:flex-row w-5/6 md:w-[90%] mx-auto`}
         >
           {/* stack tech */}
           <div
@@ -95,7 +98,7 @@ const AboutComponent = () => {
           </div>
 
           {/* experience level */}
-          <div className="w-full md:w-[50%] lg:w-[57%] mx-auto  lg:h-[400px]">
+          <div className="w-full md:w-[50%]  mx-auto  lg:h-[400px]">
             <Experience />
           </div>
         </div>

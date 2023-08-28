@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "@/style";
 import { footerLinks } from "@/constants";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <section className="bg-primary-100">
-      <section
-        className={`${styles.flexCenter}  pt-4 w-5/6 mx-auto `}
-      >
-        <div className={`${styles.flexStart} gap-6 md:flex-row flex-col mb-8 w-full`}>
+      <section className={`${styles.flexCenter}  pt-4 w-5/6 mx-auto `}>
+        <div
+          className={`${styles.flexStart} gap-6 md:flex-row flex-col mb-8 w-full`}
+        >
           {/* phone number and email */}
           <div className="flex flex-col  justify-start flex-1 mr-10 ">
             <p className={`${styles.paragraph} mt-4 text-white max-w-[310px]`}>
@@ -37,12 +38,14 @@ const Footer = () => {
                 </h4>
                 <ul className="mt-4">
                   {link.links.map((eachLink) => (
-                    <li
-                      key={eachLink.name}
-                      className={`font-poppins font-normal text-[16px] leading-[24px] text-white hover:text-secondary cursor-pointer mb-4`}
-                    >
-                      {eachLink.name}
-                    </li>
+                    <Link href={eachLink.link}>
+                      <li
+                        key={eachLink.name}
+                        className={`font-poppins font-normal text-[16px] leading-[24px] text-white hover:text-secondary cursor-pointer mb-4`}
+                      >
+                        {eachLink.name}
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
