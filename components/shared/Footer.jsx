@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="flex pb-6 flex-col md:flex-row items-center justify-between w-full pt-0 md:flex-6  border-t-[1px] border-t-[#3f3r45]">
         <div className="w-5/6 mx-auto">
           <p
-            className={`${styles.paragraph} text-center`}
+            className={`${styles.paragraph} text-center text-white`}
           >
             @2023 Musili. Made from scratch. All rights reserved
           </p>
