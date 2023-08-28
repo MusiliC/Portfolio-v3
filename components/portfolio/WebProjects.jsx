@@ -12,7 +12,7 @@ const WebProjects = () => {
             <WebProjectsCardComponent
               name={project.name}
               image={project.image}
-              desc={project.desc}
+              link={project.link}
             />
           </div>
         ))}

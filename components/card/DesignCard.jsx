@@ -9,7 +9,7 @@ const DesignCard = ({ name, desc, image }) => {
         <Image
           src={image}
           alt={name}
-          className="h-[400px] w-full object-cover"
+          className="h-[400px] w-full object-contain border border-gray-300 "
         />
       </div>
       <div className={`${styles.paddingY} flex flex-col gap-4`}>

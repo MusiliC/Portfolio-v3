@@ -28,7 +28,7 @@ const Navbar = () => {
                   i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
                 }`}
               >
-                <Link href={`${nav.id}`}>{nav.title}</Link>
+                <Link href={`/${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
           </ul>
