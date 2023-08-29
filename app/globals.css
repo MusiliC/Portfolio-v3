@@ -26,3 +26,9 @@ body,
 .progressContainer{
   @apply w-full bg-neutral-200 rounded-md;
 }
+
+
+
+.homeCTA{
+  @apply py-2.5 gap-1 flex items-center justify-center text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
+}

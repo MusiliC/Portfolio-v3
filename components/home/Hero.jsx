@@ -5,6 +5,10 @@ import hero from "public/hero.svg";
 import Button from "../shared/Button";
 import Link from "next/link";
 
+import github from "public/github1.svg"
+import linkedin from "public/linkedin1.svg"
+
+
 const Hero = () => {
   return (
     <section className="w-5/6 mx-auto">
@@ -44,7 +48,17 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button text="Linkedin" />
+                <div className="homeCTA">
+                  <div>Linkedin </div>
+                  <div>|</div>
+                  <div>
+                    <Image
+                      src={linkedin}
+                      className="text-white h-[20px] w-[26px]"
+                      alt="Git"
+                    />
+                  </div>
+                </div>
               </Link>
             </div>
             <Link
@@ -52,8 +66,16 @@ const Hero = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div>
-                <Button text="Github" />
+              <div className="homeCTA">
+                <div>Github </div>
+                <div>|</div>
+                <div>
+                  <Image
+                    src={github}
+                    className="text-white h-[20px] w-[26px]"
+                    alt="Git"
+                  />
+                </div>
               </div>
             </Link>
           </div>

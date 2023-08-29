@@ -21,7 +21,7 @@ const ArticlesComponent = () => {
             target="_blank"
           >
             <div
-              className={`${styles.paddingY} hover:bg-gray-100  flex flex-col-reverse md:flex-row md:items-center gap-4 border-t border-b  py-5 border-gray-300 md:gap-[30px] lg:gap-[70px]`}
+              className={`${styles.paddingY} hover:bg-gray-100 pb-10 md:pb-5 items-start flex flex-col-reverse md:flex-row md:items-center gap-4 border-t border-b  py-5 border-gray-300 md:gap-[30px] lg:gap-[70px]`}
             >
               {/* title and desc */}
               <div className="flex-1 flex-col gap-3 px-2 ">
@@ -33,7 +33,7 @@ const ArticlesComponent = () => {
               </div>
 
               {/* image */}
-              <div className="md:w-[40%] px-2 lg:w-[25%]  flex cursor-pointer justify-center">
+              <div className="md:w-[40%] pt-4 pb-3 md:px-3 lg:w-[25%]  flex cursor-pointer justify-center">
                 <Image
                   src={article.image}
                   alt={article.name}
