@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import Header from "../shared/Header";
 import Link from "next/link";
+import Button from "../shared/Button";
 
 const ArticlesComponent = () => {
   return (
@@ -25,15 +26,22 @@ const ArticlesComponent = () => {
             >
               {/* title and desc */}
               <div className="flex-1 flex-col gap-3 px-2 ">
-                <h1 className="font-semibold font-poppins md:text-[20px] text-secondary-100 text-[18px]">
+                <h1 className="font-semibold font-poppins md:text-[20px]  text-[18px]">
                   {article.name}
                 </h1>
 
-                <p className={`${styles.paragraph}`}>{article.desc}</p>
+                <p className={`${styles.paragraph} my-3`}>{article.desc}</p>
+                <div className="flex  ">
+                  <p
+                    className={`${styles.paragraph} text-secondary-100 underline`}
+                  >
+                    Read More
+                  </p>
+                </div>
               </div>
 
               {/* image */}
-              <div className="md:w-[40%] pt-4 pb-3 md:px-3 lg:w-[25%]  flex cursor-pointer justify-center">
+              <div className="md:w-[40%] pt-4 pb-3 px-2 md:px-3 lg:w-[25%]  flex cursor-pointer justify-center">
                 <Image
                   src={article.image}
                   alt={article.name}

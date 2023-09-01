@@ -57,17 +57,17 @@ const ContactComponent = () => {
         </div>
 
         <div
-          className={` ${styles.paddingY} w-full gap-2 flex flex-wrap justify-around md:justify-between items-center`}
+          className={` ${styles.paddingY} w-full gap-2 flex flex-col md:flex-row justify-around  items-start md:items-center`}
         >
           {contactIcons.map((item) => (
             <div
-              className={ `${styles.paddingY}  flex flex-col gap-2 items-center`}
+              className={ `py-4 md:py-10  flex md:flex-col gap-2 items-center`}
             >
-              <div className="w-[80px] flex items-center justify-center h-[80px] bg-secondary-500 rounded-full">
-                <Image src={item.icon} alt={item.name} />
+              <div className=" w-[50px] flex items-center justify-center h-[50px]  bg-secondary-500 rounded-full">
+                <Image src={item.icon} alt={item.name} className="h-[30px] w-[30px]" />
               </div>
               <h1
-                className={`font-poppins text-[13px]  lg:text-[18px] tracking-wide lg:tracking-wider leading-[31px] font-semibold`}
+                className={`font-poppins text-[13px]  lg:text-[16px] tracking-wide  leading-[31px] font-semibold`}
               >
                 {item.name}
               </h1>
