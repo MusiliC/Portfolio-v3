@@ -15,13 +15,31 @@ const ContactComponent = () => {
     body: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(values);
+  const handleSubmit = async (e) => {
+    try {
+      setLoading(true);
+      e.preventDefault();
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        console.log("success");
+      }
+
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,7 +118,9 @@ const ContactComponent = () => {
               ></textarea>
 
               <div className="flex justify-start mt-2.5">
-                <button className="btnStyles">Submit</button>
+                <button className="btnStyles">
+                  {loading ? "Sending.." : "Submit"}
+                </button>
               </div>
             </form>
           </div>
