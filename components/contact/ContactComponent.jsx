@@ -4,8 +4,8 @@ import styles from "@/style";
 import Image from "next/image";
 import React, { useState } from "react";
 import contact from "public/contact.jpg";
-import Button from "../shared/Button";
 import { contactIcons } from "@/constants";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactComponent = () => {
   const [values, setValues] = useState({
@@ -30,13 +30,19 @@ const ContactComponent = () => {
         body: JSON.stringify(values),
       });
 
-      if (response.ok) {
-        console.log("success");
-      }
+      toast.success("Send Email success!");
 
       setLoading(false);
+
+      setValues({
+        name: "",
+        email: "",
+        subject: "",
+        body: "",
+      });
     } catch (error) {
       console.log(error);
+      toast.error(error.message);
     } finally {
       setLoading(false);
     }
@@ -80,6 +86,7 @@ const ContactComponent = () => {
               <input
                 type="text"
                 name="name"
+                required
                 value={values.name}
                 className="formInput"
                 onChange={handleChange}
@@ -88,8 +95,9 @@ const ContactComponent = () => {
                 Email
               </label>
               <input
-                type="text"
+                type="email"
                 name="email"
+                required
                 className="formInput"
                 value={values.email}
                 onChange={handleChange}
@@ -100,6 +108,7 @@ const ContactComponent = () => {
               <input
                 type="text"
                 name="subject"
+                required
                 className="formInput"
                 value={values.subject}
                 onChange={handleChange}
@@ -110,6 +119,7 @@ const ContactComponent = () => {
               <textarea
                 name="body"
                 id=""
+                required
                 className=" p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm"
                 cols="20"
                 rows="10"
@@ -149,6 +159,7 @@ const ContactComponent = () => {
           ))}
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };

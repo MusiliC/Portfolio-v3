@@ -41,7 +41,7 @@ const Hero = () => {
 
           {/* CTA */}
 
-          <div className="flex gap-8 items-center  lg:mt-4">
+          <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-8 items-start md:items-center  lg:mt-4">
             <div>
               <Link
                 href="https://www.linkedin.com/in/brian-musili-405b1220a/"
