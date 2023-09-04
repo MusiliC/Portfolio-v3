@@ -249,32 +249,37 @@ export const webProjects = [
   {
     image: gym,
     name: "Gym website",
-    desc: "Gym website design challenge",
+    desc: "Gym website design challenge made for gym with great features",
+    github: "https://github.com/MusiliC/gym-typescript",
     link: "https://a4718aa7.gym-typescript-61v.pages.dev/",
   },
   {
     image: dashboard,
     name: "Admin Dashboard",
-    desc: "Admin Dashboard design",
+    desc: "Admin Dashboard design with calendar, theming and graphs",
+    github: "https://github.com/MusiliC/admin-side-dashboard-theming-calendar",
     link: "https://advance-admin-dashboard.onrender.com/",
   },
   {
     image: bookReview,
     name: "Book Review",
+    github: "https://github.com/MusiliC/Novels-review-website",
     desc: "Website where users read reviews and can participate in creating blogs ",
     link: "https://novels-app-wheat.vercel.app/novels",
   },
   {
     image: KUSA,
     name: "KUSA System",
-    desc: "Kenya Sports System for generating fixtures and coming up with league tables ",
-    link: "project Link",
+    github: "https://github.com/MusiliC/KUSA-system",
+    desc: "Kenya Sports System for generating fixtures and  league tables ",
+    link: "#",
   },
   {
     image: bankAccount,
     name: "Bank Website",
-    desc: "Frontend Design for a bank website",
+    desc: "Frontend Design for a bank website, responsive and customizable",
     link: "https://bankappsite-web.netlify.app/",
+    github: "https://github.com/MusiliC/bank-app-website",
   },
 ];
 
