@@ -7,7 +7,7 @@ import github2 from "public/github2.png";
 
 const WebProjectsCardComponent = ({ name, link, image, github, desc }) => {
   return (
-    <div className="w-5/6 mx-auto hover:border p-4 hover:bg-secondary-500 cursor-pointer  rounded-md hover:border-gray-200">
+    <div className="w-5/6 mx-auto p-4 hover:bg-gray-50 cursor-pointer  rounded-md ">
       <div>
         <Image src={image} alt={name} className="h-[180px] w-full " />
       </div>
