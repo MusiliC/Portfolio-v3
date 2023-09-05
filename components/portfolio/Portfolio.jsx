@@ -8,7 +8,7 @@ const PortfolioComponent = () => {
   return (
     <section className={`${styles.paddingY} `}>
       <div
-        className={`${styles.paddingY} w-5/6 py-12 mx-auto flex gap-10 flex-col md:flex-row items-center hover:cursor-pointer`}
+        className={`${styles.paddingY} w-5/6 py-12 mx-auto flex gap-20 md:gap-10 lg:gap-20 flex-col md:flex-row items-center hover:cursor-pointer`}
       >
         {projectCards.map((project) => (
           <>
