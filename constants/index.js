@@ -19,6 +19,7 @@ import mySite4 from "public/mySite4.png";
 
 //web projects
 import gym from "public/gym.png";
+import Auth from "public/Auth.png";
 import dashboard from "public/dashboard.png";
 import bankAccount from "public/bankAccount.png";
 import bookReview from "public/bookReview.png";
@@ -254,6 +255,14 @@ export const webProjects = [
     desc: "Gym website design challenge made for gym with great features",
     github: "https://github.com/MusiliC/gym-typescript",
     link: "https://a4718aa7.gym-typescript-61v.pages.dev/",
+  },
+  {
+    image: Auth,
+    name: "Authentication System",
+    desc: "Project with advanced features such as email verification and password reset by use of jwt",
+    github:
+      "https://github.com/MusiliC/authentication-email-verification-password-reset",
+    link: "https://authentication-email-verification-password-reset.vercel.app/",
   },
   {
     image: dashboard,
