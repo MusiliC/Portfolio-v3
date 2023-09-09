@@ -232,12 +232,14 @@ export const tools = [
 
 export const designProjects = [
   {
+    id: 1,
     image: eoe,
     name: "EOE Foundation",
     desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
     imageArray: [eoe, eoe1, eoe2, eoe3],
   },
   {
+    id: 2,
     image: mySite,
     name: "Personal Website",
     desc: "Designs of my personal website the structure and body skeleton. The designs are not the final product as it constantly changes as I do adjustments to my website. Will be adding more designs and improving my skill in UX design.",

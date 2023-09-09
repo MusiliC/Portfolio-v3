@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <section className="w-full pt-14 md:pt-20  pb-16">
+    <section className="w-full pt-14 md:pt-20  ">
       <div className=" relative w-full  bg-gradient-to-br from-primary-500 to-secondary-500  h-[300px]">
         <Image
           src={aboutImage}
@@ -26,7 +26,10 @@ export default function RootLayout({ children }) {
           </p>
         </div>
       </div>
+      <div className=" h-full pb-16">
+
       {children}
+      </div>
     </section>
   );
 }

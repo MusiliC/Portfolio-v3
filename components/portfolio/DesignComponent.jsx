@@ -13,6 +13,7 @@ const DesignComponent = () => {
               name={project.name}
               image={project.image}
               desc={project.desc}
+              id={project.id}
             />
           </div>
         ))}
