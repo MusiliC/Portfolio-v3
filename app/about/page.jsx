@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="min-h-[70vh] pt-28 md:pt-32 lg:min-h-[85vh] ">
+    <div className="min-h-[70vh] pt-28 lg:min-h-[85vh] ">
       <AboutComponent />
     </div>
   );

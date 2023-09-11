@@ -83,7 +83,7 @@ const AboutComponent = () => {
         >
           {/* stack tech */}
           <div
-            className={`${styles.paddingY} w-full md:w-[50%] lg:w-[40%] grid grid-cols-3 lg:grid-cols-4 justify-between  gap-5`}
+            className={`${styles.paddingY} w-full md:w-5/6 mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5  gap-5`}
           >
             {tools.map((tool) => (
               <div key={tool.name} className="flex  items-center flex-col">
@@ -98,9 +98,9 @@ const AboutComponent = () => {
           </div>
 
           {/* experience level */}
-          <div className="w-full md:w-[50%]  mx-auto  lg:h-[400px]">
+          {/* <div className="w-full md:w-[50%]  mx-auto  lg:h-[400px]">
             <Experience />
-          </div>
+          </div> */}
         </div>
       </section>
     </>
