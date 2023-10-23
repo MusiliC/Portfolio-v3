@@ -115,15 +115,15 @@ export const footerLinks = [
       },
       {
         name: "Twitter",
-        link: "#",
+        link: "https://twitter.com/Musili_14",
       },
+      // {
+      //   name: "Instagram",
+      //   link: "#",
+      // },
       {
-        name: "Instagram",
-        link: "#",
-      },
-      {
-        name: "What's App",
-        link: "#",
+        name: "Fiverr",
+        link: "https://www.fiverr.com/musili_brian?up_rollout=true",
       },
     ],
   },
@@ -328,33 +328,4 @@ export const contactIcons = [
   },
 ];
 
-export const experienceLevel = [
-  {
-    name: "Javascript",
-    level: "80%",
-  },
-  {
-    name: "React",
-    level: "90%",
-  },
-  {
-    name: "Node JS",
-    level: "70%",
-  },
-  {
-    name: "CSS(Tailwind CSS)",
-    level: "90%",
-  },
-  {
-    name: "Java",
-    level: "50%",
-  },
-  {
-    name: "Git",
-    level: "70%",
-  },
-  {
-    name: "UX Design",
-    level: "70%",
-  },
-];
+

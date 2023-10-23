@@ -38,7 +38,7 @@ const Service = () => {
           {services.map((service) => (
             <div
               key={service.title}
-              className=" h-[120px] border-[1px] border-[#3f3r45] rounded-md px-4 flex items-center"
+              className=" h-[120px] border-[1px] border-[#3f3r45] rounded-md shadow-md px-4 flex items-center"
             >
               <div className="flex items-center gap-2 ">
                 <div>
