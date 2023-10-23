@@ -3,6 +3,7 @@ import web from "public/web.jpg";
 import ux from "public/ux.jpg";
 import atomic from "public/atomic.jpg";
 import mindset from "public/mindset.jpg";
+import positive from "public/positive.jpg"
 
 //ux projects
 import eoe from "public/eoe.png";
@@ -304,6 +305,11 @@ export const articles = [
     image: mindset,
     name: "Mindset the new psychology of success",
     desc: "Mindset: The New Psychology of Success is a book by Carol S. Dweck about human thoughts, and how these thoughts can greatly influence the way we live our everyday lives. This book is written in the form of a self-help book, so readers will find many interesting and educational tidbits of advice on how to live the best life possible....",
+  },
+  {
+    image: positive,
+    name: "The power of positive thinking",
+    desc: "By Norman vincent - updating soon..."
   },
 ];
 
