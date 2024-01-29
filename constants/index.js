@@ -235,7 +235,11 @@ export const designProjects = [
     desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
     imageArray: [eoe, eoe1, eoe2, eoe3],
   },
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> e9d669ac0c35ddad761a6bd1b7e142507f209fc3
 ];
 
 export const webProjects = [
