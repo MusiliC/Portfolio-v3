@@ -11,12 +11,7 @@ import eoe1 from "public/eoe1.png";
 import eoe2 from "public/eoe2.png";
 import eoe3 from "public/eoe3.png";
 
-// project 2
-import mySite from "public/mySite.png";
-import mySite1 from "public/mySite1.png";
-import mySite2 from "public/mySite2.png";
-import mySite3 from "public/mySite3.png";
-import mySite4 from "public/mySite4.png";
+
 
 //web projects
 import gym from "public/gym.png";
@@ -240,13 +235,7 @@ export const designProjects = [
     desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
     imageArray: [eoe, eoe1, eoe2, eoe3],
   },
-  {
-    id: 2,
-    image: mySite,
-    name: "Personal Website",
-    desc: "Designs of my personal website the structure and body skeleton. The designs are not the final product as it constantly changes as I do adjustments to my website. Will be adding more designs and improving my skill in UX design.",
-    imageArray: [mySite, mySite1, mySite2, mySite3, mySite4],
-  },
+
 ];
 
 export const webProjects = [
