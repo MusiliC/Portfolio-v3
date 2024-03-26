@@ -97,10 +97,7 @@ const AboutComponent = () => {
             ))}
           </div>
 
-          {/* experience level */}
-          {/* <div className="w-full md:w-[50%]  mx-auto  lg:h-[400px]">
-            <Experience />
-          </div> */}
+     
         </div>
       </section>
     </>

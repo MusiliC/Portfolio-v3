@@ -1,42 +1,33 @@
 "use client";
 
-import styles from "@/style";
+import { homeSkills } from "@/constants";
+import Image from "next/image";
 import React from "react";
-import Button from "../shared/Button";
-import Link from "next/link";
 
 const Me = () => {
   return (
-    <section className=" flex justify-center items-center bg-primary-500 py-7">
-      <div className={` gap-16 lg:gap-10 ${styles.paddingY}`}>
-        <div className="w-5/6 lg:w-[70%] mx-auto">
-          <div className="md:px-16 mx-auto lg:px-0 lg:w-5/6 flex gap-2  lg:items-center flex-col">
-            {/* text */}
-            <div>
-              <p className={`${styles.paragraph} text-justify`}>
-                I am a full stack developer and UX Designer located in Nairobi,
-                Kenya. I am passionate about building beautiful and clean
-                experiences for my users merged with their functionalities.
-              </p>
+    <section className=" flex justify-center items-center bg-gray-700 py-5">
+      <div className="w-5/6 mx-auto">
+        <div className="flex  flex-wrap gap-5 justify-between">
+          {homeSkills.map((skill) => (
+            <div
+              key={skill.id}
+              className="flex  justify-center items-center gap-3"
+            >
+              <div>
+                <Image
+                  src={skill.icon}
+                  alt={skill.title}
+                  className="lg:h-[23px] h-[17px] w-[17px]  lg:w-[23px] object-cover"
+                />
+              </div>
+              <div>
+                <h2 className="text-white text-[15px] lg:uppercase font-semibold">
+                  {skill.title}
+                </h2>
+              </div>
             </div>
-
-            {/* link read more */}
-            <div>
-              <p
-                className={`${styles.paragraph} font-semibold tracking-wider underline cursor-pointer `}
-              >
-                {" "}
-                <Link href="/about">Read More</Link>{" "}
-              </p>
-            </div>
-
-            {/* resume */}
-            <div className="mt-4 flex">
-              <a href="Musili_Resume.pdf" rel="noopener noreferrer">
-                <Button text="Resume" />
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

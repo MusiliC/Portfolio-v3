@@ -5,36 +5,28 @@ import hero from "public/hero.svg";
 import Button from "../shared/Button";
 import Link from "next/link";
 
-import github from "public/github1.svg"
-import linkedin from "public/linkedin1.svg"
-
+import github from "public/github1.svg";
+import linkedin from "public/linkedin1.svg";
 
 const Hero = () => {
   return (
-    <section className="w-5/6 mx-auto">
+    <section className="w-5/6  mx-auto">
       <div
         className={`flex lg:flex-row flex-col lg:items-center gap-16 lg:gap-10 ${styles.paddingY}`}
       >
-        {/* words section */}
-
         <div
           className={`flex-1 ${styles.flexStart} flex-col xl:px-0 md:px-16 `}
         >
-          <div className="py-[6px] px-[4px] ">
-            <p className={` tracking-wider text-[20px]`}>Hello I am</p>
-          </div>
-
-          {/* name */}
-
           <div className="">
             <h1 className=" font-bold font-poppins md:text-[62px] text-[32px] md:leading-[80px] leading-[52px]">
-              Brian Musili
+              Hello, <br /> I'm Musili
             </h1>
 
-            <h1 className=" font-semibold font-poppins md:text-[22px] text-[15px] md:leading-[40px] leading-[22px]">
-              Full Stack developer || <br />{" "}
-              <span className="text-secondary-100">UX Designer</span>
-            </h1>
+            <p className={`text-[17px] leading-[32px] pt-[8px] lg:w-[95%]`}>
+              I engineer software solutions, create seamless web experiences,
+              optimize operations, and refine designs for efficiency located in{" "}
+              <span className="font-semibold">Nairobi, Kenya.</span>
+            </p>
           </div>
 
           <br />

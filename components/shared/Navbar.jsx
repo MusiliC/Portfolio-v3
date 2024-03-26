@@ -7,6 +7,7 @@ import Image from "next/image";
 import menu from "public/menu.svg";
 import close from "public/close.svg";
 import { usePathname } from "next/navigation";
+import codeLogo from "public/icons/code.png";
 
 const Navbar = () => {
   const activeLink = usePathname();
@@ -14,12 +15,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className=" fixed top-0 z-30 bg-white shadow  w-full ">
+    <section className=" fixed top-0 z-30 bg-primary-two-100  w-full ">
       <div className="w-5/6 mx-auto py-2">
         <nav className="flex items-center justify-between w-full py-4">
           {/* logo */}
           <div>
-            <p className="font-semibold tracking-wider text-[20px]">Musili</p>
+            <Link href="/">
+            <Image src={codeLogo} alt="Cee" className=" h-[25px] w-[25px]" />
+            </Link>
           </div>
 
           {/* links */}
@@ -28,9 +31,7 @@ const Navbar = () => {
               {navLinks.map((nav, i) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-normal cursor-pointer text-[16px]  ${
-                    i === navLinks.length - 1 ? "mr-0" : "mr-5 lg:mr-10"
-                  }`}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] mr-5 lg:mr-10`}
                 >
                   <Link
                     href={`${nav.id}`}
@@ -44,14 +45,13 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              {/* contact */}
+              <li className="hidden md:flex">
+                <Link href="/contact">
+                  <Button text={"Contact Me"} />
+                </Link>
+              </li>
             </ul>
-          </div>
-
-          {/* contact */}
-          <div className="hidden md:flex">
-            <Link href="/contact">
-              <Button text={"Contact Me"} />
-            </Link>
           </div>
 
           {/* mobile */}

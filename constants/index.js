@@ -3,15 +3,13 @@ import web from "public/web.jpg";
 import ux from "public/ux.jpg";
 import atomic from "public/atomic.jpg";
 import mindset from "public/mindset.jpg";
-import positive from "public/positive.jpg"
+import positive from "public/positive.jpg";
 
 //ux projects
 import eoe from "public/eoe.png";
 import eoe1 from "public/eoe1.png";
 import eoe2 from "public/eoe2.png";
 import eoe3 from "public/eoe3.png";
-
-
 
 //web projects
 import gym from "public/gym.png";
@@ -48,6 +46,12 @@ import mail from "public/mail.png";
 import location from "public/location.png";
 import phone from "public/phone.png";
 
+//home page skills
+import homeWeb from "public/icons/web.png"
+import homeSoft from "public/icons/soft.png"
+import homeDevops from "public/icons/devops.png"
+import homeUx from "public/icons/ux.png"
+
 export const navLinks = [
   {
     id: "/",
@@ -61,14 +65,37 @@ export const navLinks = [
     id: "/about",
     title: "About Me",
   },
-  {
-    id: "/articles",
-    title: "Articles",
-  },
+  // {
+  //   id: "/articles",
+  //   title: "Articles",
+  // },
   // {
   //   id: "blogs",z
   //   title: "Blogs",
   // },
+];
+
+export const homeSkills = [
+  {
+    id: 1,
+    title: "Software Development",
+    icon: homeSoft
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    icon: homeWeb
+  },
+  {
+    id: 3,
+    title: "DevOps",
+    icon: homeDevops
+  },
+  {
+    id: 4,
+    title: "UX Design",
+    icon: homeUx
+  },
 ];
 
 export const footerLinks = [
@@ -235,11 +262,6 @@ export const designProjects = [
     desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
     imageArray: [eoe, eoe1, eoe2, eoe3],
   },
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> e9d669ac0c35ddad761a6bd1b7e142507f209fc3
 ];
 
 export const webProjects = [
@@ -302,7 +324,7 @@ export const articles = [
   {
     image: positive,
     name: "The power of positive thinking",
-    desc: "By Norman vincent - updating soon..."
+    desc: "By Norman vincent - updating soon...",
   },
 ];
 
@@ -320,5 +342,3 @@ export const contactIcons = [
     name: "+254768687334",
   },
 ];
-
-
