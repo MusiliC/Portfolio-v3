@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body,
 #root,
@@ -12,31 +11,33 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sana", sans-serif;
-  @apply text-primary-100; 
+  @apply text-primary-100;
 }
 
-.formInput{
+.formInput {
   @apply p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm;
 }
 
-.formLabel{
-@apply pt-2;
+.formLabel {
+  @apply pt-2;
 }
 
-.btnStyles{
-  @apply py-2.5 text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none ;
+.btnStyles {
+  @apply py-2.5 text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
 }
 
-.progressBar{
+.progressBar {
   @apply bg-primary-500  rounded-md p-0.5  text-center text-xs font-medium leading-none text-primary-100;
 }
 
-.progressContainer{
+.progressContainer {
   @apply w-full bg-neutral-200 rounded-md;
 }
 
+.headingTwo {
+  @apply font-semibold text-center md:text-[30px] text-[18px] md:leading-[40px] leading-[25px];
+}
 
-
-.homeCTA{
+.homeCTA {
   @apply py-2.5 gap-1 flex items-center justify-center text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
 }

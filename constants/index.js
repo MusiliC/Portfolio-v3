@@ -47,10 +47,15 @@ import location from "public/location.png";
 import phone from "public/phone.png";
 
 //home page skills
-import homeWeb from "public/icons/web.png"
-import homeSoft from "public/icons/soft.png"
-import homeDevops from "public/icons/devops.png"
-import homeUx from "public/icons/ux.png"
+import homeWeb from "public/icons/web.png";
+import homeSoft from "public/icons/soft.png";
+import homeDevops from "public/icons/devops.png";
+import homeUx from "public/icons/ux.png";
+
+//service
+import webPri from "public/icons/webPri.png";
+import devPri from "public/icons/devPri.png";
+import softPri from "public/icons/softPri.png";
 
 export const navLinks = [
   {
@@ -79,22 +84,22 @@ export const homeSkills = [
   {
     id: 1,
     title: "Software Development",
-    icon: homeSoft
+    icon: homeSoft,
   },
   {
     id: 2,
     title: "Web Development",
-    icon: homeWeb
+    icon: homeWeb,
   },
   {
     id: 3,
     title: "DevOps",
-    icon: homeDevops
+    icon: homeDevops,
   },
   {
     id: 4,
     title: "UX Design",
-    icon: homeUx
+    icon: homeUx,
   },
 ];
 
@@ -153,20 +158,19 @@ export const footerLinks = [
 
 export const services = [
   {
-    title: "Web and Mobile App Development",
-    icon: approve,
-  },
-  {
-    title: "Responsive Web Design",
-    icon: approve,
-  },
-  {
-    title: "UX Design",
-    icon: approve,
-  },
-  {
     title: "Software Development",
-    icon: approve,
+    icon: softPri,
+    body: "I design, build, and maintain software applications, ensuring they meet client requirements and solve problems effectively."
+  },
+  {
+    title: "Web Design and Development",
+    icon: webPri,
+    body: "I specialize in creating responsive, user-friendly websites, integrating cutting-edge technologies for optimal performance.",
+  },
+  {
+    title: "DevOps",
+    icon: devPri,
+    body: "I orchestrate software delivery through DevOps practices, automate processes, and ensure efficient deployment and delivery.",
   },
 ];
 

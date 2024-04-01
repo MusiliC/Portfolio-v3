@@ -16,7 +16,7 @@ const AboutComponent = () => {
           className={`${styles.flexCenter} flex-col gap-3 md:w-5/6 lg:w-2/3  mx-auto`}
         >
           <div>
-            <h1 className=" font-semibold font-poppins text-center md:text-[30px] text-[18px] md:leading-[40px] leading-[25px]">
+            <h1 className="headingTwo">
               Full stack Developer <br /> UX Designer
             </h1>
           </div>
