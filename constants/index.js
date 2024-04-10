@@ -1,15 +1,10 @@
-import approve from "public/approve.png";
 import web from "public/web.jpg";
 import ux from "public/ux.jpg";
 import atomic from "public/atomic.jpg";
 import mindset from "public/mindset.jpg";
 import positive from "public/positive.jpg";
 
-//ux projects
-import eoe from "public/eoe.png";
-import eoe1 from "public/eoe1.png";
-import eoe2 from "public/eoe2.png";
-import eoe3 from "public/eoe3.png";
+
 
 //web projects
 import gym from "public/gym.png";
@@ -18,6 +13,7 @@ import dashboard from "public/dashboard.png";
 import bankAccount from "public/bankAccount.png";
 import bookReview from "public/bookReview.png";
 import KUSA from "public/KUSA.png";
+import sentelemo from "public/images/sentelemo.png";
 
 //tools
 
@@ -39,7 +35,7 @@ import springBoot from "public/springBoot.svg";
 import tailwind from "public/tailwind.svg";
 import ts from "public/ts.svg";
 
-//design projects
+
 
 //contact icons
 import mail from "public/mail.png";
@@ -144,10 +140,7 @@ export const footerLinks = [
         name: "Twitter",
         link: "https://twitter.com/Musili_14",
       },
-      // {
-      //   name: "Instagram",
-      //   link: "#",
-      // },
+    
       {
         name: "Fiverr",
         link: "https://www.fiverr.com/musili_brian?up_rollout=true",
@@ -160,7 +153,7 @@ export const services = [
   {
     title: "Software Development",
     icon: softPri,
-    body: "I design, build, and maintain software applications, ensuring they meet client requirements and solve problems effectively."
+    body: "I design, build, and maintain software applications, ensuring they meet client requirements and solve problems effectively.",
   },
   {
     title: "Web Design and Development",
@@ -258,16 +251,6 @@ export const tools = [
   },
 ];
 
-export const designProjects = [
-  {
-    id: 1,
-    image: eoe,
-    name: "EOE Foundation",
-    desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
-    imageArray: [eoe, eoe1, eoe2, eoe3],
-  },
-];
-
 export const webProjects = [
   {
     image: gym,
@@ -277,19 +260,26 @@ export const webProjects = [
     link: "https://a4718aa7.gym-typescript-61v.pages.dev/",
   },
   {
-    image: Auth,
-    name: "Authentication System",
-    desc: "Project with advanced features such as email verification and password reset by use of jwt",
-    github:
-      "https://github.com/MusiliC/authentication-email-verification-password-reset",
-    link: "https://authentication-email-verification-password-reset.vercel.app/",
+    image: sentelemo,
+    name: "Sentelemo Engineering",
+    github: "https://github.com/MusiliC/sentelmo-v2",
+    link: "https://sentelmo.co.ke/",
   },
+
   {
     image: dashboard,
     name: "Admin Dashboard",
     desc: "Admin Dashboard design with calendar, theming and graphs",
     github: "https://github.com/MusiliC/admin-side-dashboard-theming-calendar",
     link: "https://advance-admin-dashboard.onrender.com/",
+  },
+  {
+    image: Auth,
+    name: "Authentication System",
+    desc: "Project with advanced features such as email verification and password reset by use of jwt",
+    github:
+      "https://github.com/MusiliC/authentication-email-verification-password-reset",
+    link: "https://authentication-email-verification-password-reset.vercel.app/",
   },
   {
     image: bookReview,
