@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import HomeContact from "@/components/home/HomeContact";
 import HomeProjects from "@/components/home/HomeProjects";
 import Me from "@/components/home/Me";
 import Service from "@/components/home/Service";
@@ -15,6 +16,7 @@ export default function Home() {
       <Me />
       <Service />
       <HomeProjects/>
+      <HomeContact/>
     </main>
   );
 }
