@@ -4,8 +4,6 @@ import atomic from "public/atomic.jpg";
 import mindset from "public/mindset.jpg";
 import positive from "public/positive.jpg";
 
-
-
 //web projects
 import gym from "public/gym.png";
 import Auth from "public/Auth.png";
@@ -35,8 +33,6 @@ import springBoot from "public/springBoot.svg";
 import tailwind from "public/tailwind.svg";
 import ts from "public/ts.svg";
 
-
-
 //contact icons
 import mail from "public/mail.png";
 import location from "public/location.png";
@@ -52,6 +48,11 @@ import homeUx from "public/icons/ux.png";
 import webPri from "public/icons/webPri.png";
 import devPri from "public/icons/devPri.png";
 import softPri from "public/icons/softPri.png";
+
+//footer social icons
+import linkFooter from "public/icons/linkedin.png";
+import githubFooter from "public/icons/git.png";
+import fiverFooter from "public/icons/fiver.png";
 
 export const navLinks = [
   {
@@ -99,34 +100,43 @@ export const homeSkills = [
   },
 ];
 
+export const socialMedia = [
+  {
+    src: linkFooter,
+    alt: "linkedin logo",
+    link: "https://www.linkedin.com/in/brian-musili-405b1220a/",
+  },
+  { src: githubFooter, alt: "github logo", link: "https://github.com/MusiliC" },
+  {
+    src: fiverFooter,
+    alt: "fiver logo",
+    link: "https://www.fiverr.com/musili_brian?up_rollout=true",
+  },
+];
+
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Services",
     links: [
-      {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "About Me",
-        link: "/about",
-      },
-      {
-        name: "Portfolio",
-        link: "/portfolio",
-      },
-      {
-        name: "Blogs",
-        link: "#",
-      },
-      {
-        name: "Articles",
-        link: "/articles",
-      },
+      { name: "Web Development", link: "#" },
+      { name: "Responsive Web Design", link: "#" },
+      { name: "Software Development", link: "#" },
+      { name: "DevOps", link: "#" },
+      { name: "UX Design", link: "#" },
     ],
   },
   {
-    title: "Social Media",
+    title: "Links",
+    links: [
+      { name: "Home", link: "" },
+      { name: "Projects", link: "#" },
+      { name: "Services", link: "#" },
+      { name: "Blogs", link: "#" },
+      { name: "Contact", link: "#" },
+    ],
+  },
+  {
+    title: "Get in touch",
     links: [
       {
         name: "Linkedin",
@@ -137,14 +147,10 @@ export const footerLinks = [
         link: "https://github.com/MusiliC",
       },
       {
-        name: "Twitter",
-        link: "https://twitter.com/Musili_14",
-      },
-    
-      {
         name: "Fiverr",
         link: "https://www.fiverr.com/musili_brian?up_rollout=true",
       },
+      { name: "+254768687334", link: "tel:+254768687334" },
     ],
   },
 ];

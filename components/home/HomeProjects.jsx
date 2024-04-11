@@ -22,7 +22,7 @@ const HomeProjects = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <Link href={"/projects"}>
+        <Link href={"/#"}>
           <Button text={"All projects"} />
         </Link>
       </div>

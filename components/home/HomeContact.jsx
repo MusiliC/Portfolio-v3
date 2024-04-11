@@ -49,7 +49,7 @@ const HomeContact = () => {
   };
 
   return (
-    <section className={`${styles.paddingY} w-full `}>
+    <section className={`py-10 w-full `}>
       <div className={` w-5/6 mx-auto`}>
       <div className="lg:w-3/4 mx-auto">
         <h2 className="text-center headingTwo">Say Hi!</h2>
