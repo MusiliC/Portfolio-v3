@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body,
 #root,
@@ -12,31 +11,37 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sana", sans-serif;
-  @apply text-primary-100; 
+  @apply text-primary-100;
 }
 
-.formInput{
-  @apply p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm;
+.screen {
+  @apply w-5/6 mx-auto;
 }
 
-.formLabel{
-@apply pt-2;
+.formInput {
+  @apply p-2  text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm;
 }
 
-.btnStyles{
-  @apply py-2.5 text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none ;
+.formLabel {
+  @apply pt-2;
 }
 
-.progressBar{
+.btnStyles {
+  @apply py-2.5 text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
+}
+
+.progressBar {
   @apply bg-primary-500  rounded-md p-0.5  text-center text-xs font-medium leading-none text-primary-100;
 }
 
-.progressContainer{
+.progressContainer {
   @apply w-full bg-neutral-200 rounded-md;
 }
 
+.headingTwo {
+  @apply font-semibold text-center md:text-[30px] text-[18px] md:leading-[40px] leading-[25px];
+}
 
-
-.homeCTA{
+.homeCTA {
   @apply py-2.5 gap-1 flex items-center justify-center text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
 }

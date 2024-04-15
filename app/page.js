@@ -1,22 +1,11 @@
 import Hero from "@/components/home/Hero";
+import HomeContact from "@/components/home/HomeContact";
+import HomeProjects from "@/components/home/HomeProjects";
 import Me from "@/components/home/Me";
 import Service from "@/components/home/Service";
 
 export default function Home() {
 
-  // const [isTopOfPage, setIsTopOfPage] = useState(true);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY === 0) {
-  //       setIsTopOfPage(true);
-  //       setSelectedPage(SelectedPage.Home);
-  //     }
-  //     if (window.scrollY !== 0) setIsTopOfPage(false);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
 
 
   return (
@@ -25,8 +14,9 @@ export default function Home() {
         <Hero />
       </section>
       <Me />
-
       <Service />
+      <HomeProjects/>
+      <HomeContact/>
     </main>
   );
 }
