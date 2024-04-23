@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HomeProjects = () => {
   return (
-    <section className="bg-primary-two-100 py-10">
+    <section className="bg-secondary-500 py-10">
       <div className="screen">
       <div className="lg:w-3/4 mx-auto">
         <h2 className="text-center headingTwo">Recent Portfolio</h2>
@@ -22,7 +22,7 @@ const HomeProjects = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <Link href={"/#"}>
+        <Link href={"/portfolio"}>
           <Button text={"All projects"} />
         </Link>
       </div>

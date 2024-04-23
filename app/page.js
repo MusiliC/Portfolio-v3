@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className=" ">
-      <section className="min-h-[100vh] pt-28  lg:pt-32 bg-primary-two-100">
+      <section className="min-h-[100vh] pt-28  lg:pt-32 bg-secondary-500">
         <Hero />
       </section>
       <Me />

@@ -4,7 +4,7 @@ import React from "react";
 import Musili from "public/cee.jpeg";
 import Button from "../shared/Button";
 import { tools } from "@/constants";
-import Experience from "./Experience";
+
 import Link from "next/link";
 
 const AboutComponent = () => {
@@ -17,7 +17,7 @@ const AboutComponent = () => {
         >
           <div>
             <h1 className="headingTwo">
-              Full stack Developer <br /> UX Designer
+              Software Developer <br /> Web Developer
             </h1>
           </div>
 
@@ -47,7 +47,7 @@ const AboutComponent = () => {
         {/* about me */}
         <div className={`${styles.paddingY} md:w-5/6 lg:w-2/3  mx-auto`}>
           <p className={`${styles.paragraph} `}>
-            My name is Brian Musili a full stack developer/UX designer from
+            My name is Brian Musili a software/web developer from
             Nairobi, Kenya. I completed my studies at Dedan Kimathi University
             of Technology where I pursued a degree in computer science. I
             immersed myself in web development field, focusing Javascript as my

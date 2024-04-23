@@ -15,7 +15,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className=" fixed top-0 z-30 bg-primary-two-100  w-full ">
+    <section className=" fixed top-0 z-30 bg-secondary-500   w-full ">
       <div className="w-5/6 mx-auto py-2">
         <nav className="flex items-center justify-between w-full py-4">
           {/* logo */}

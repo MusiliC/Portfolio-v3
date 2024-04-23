@@ -54,7 +54,7 @@ const ContactComponent = () => {
         {/* title header */}
 
         <div
-          className={`${styles.paddingY}  bg-secondary-500 px-5 rounded-sm  lg:w-1/2 ml-auto`}
+          className={`${styles.paddingY} bg-primary-two-100  px-5 rounded-sm  lg:w-1/2 ml-auto`}
         >
           <h1 className=" font-bold font-poppins md:text-[52px] text-[32px] md:leading-[70px] leading-[40px]">
             Let's <br /> Connect

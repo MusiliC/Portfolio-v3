@@ -42,6 +42,10 @@ body,
   @apply font-semibold text-center md:text-[30px] text-[18px] md:leading-[40px] leading-[25px];
 }
 
+.headingTwoStart{
+    @apply font-semibold text-start md:text-[47px] text-[18px] md:leading-[60px] leading-[25px];
+}
+
 .homeCTA {
   @apply py-2.5 gap-1 flex items-center justify-center text-sm rounded-md px-4 cursor-pointer bg-secondary-100  font-medium text-[16px] text-white outline-none;
 }
