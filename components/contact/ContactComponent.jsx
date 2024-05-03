@@ -49,7 +49,7 @@ const ContactComponent = () => {
   };
 
   return (
-    <section className={`${styles.paddingY} w-full `}>
+    <section className={`py-10 w-full `}>
       <div className={` w-5/6 mx-auto`}>
         {/* title header */}
 
@@ -136,7 +136,7 @@ const ContactComponent = () => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className={` ${styles.paddingY} w-full gap-2 flex flex-col md:flex-row justify-around  items-start md:items-center`}
         >
           {contactIcons.map((item) => (
@@ -157,7 +157,7 @@ const ContactComponent = () => {
               </h1>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <Toaster />
     </section>

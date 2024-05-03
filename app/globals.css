@@ -11,7 +11,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sana", sans-serif;
-  @apply text-primary-100;
+  @apply text-primary-100 ;
+  
 }
 
 .screen {
@@ -44,6 +45,10 @@ body,
 
 .headingTwoStart{
     @apply font-semibold text-start md:text-[47px] text-[18px] md:leading-[60px] leading-[25px];
+}
+
+.headingThree {
+  @apply font-semibold text-start md:text-[27px] text-[18px] md:leading-[35px] leading-[15px];
 }
 
 .homeCTA {

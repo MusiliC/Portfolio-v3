@@ -21,20 +21,14 @@ const WebProjects = () => {
           <h2 className="w-3/4 max-lg:w-full headingTwoStart">
             Featured <br className="max-lg:hidden" /> Projects
           </h2>
-          <p className="my-2 w-3/4 max-lg:w-full text-start">
+          <p className="my-2 w-[90%] max-lg:w-full text-justify">
             Featured projects in web and software development showcasing
             innovative solutions crafted with industrial best practices,
             ensuring scalability, security, and optimal performance .
           </p>
         </div>
       </div>
-      {/* <div className="lg:w-3/4 py-5 mx-auto">
-        <h2 className="text-center headingTwo">Featured Projects</h2>
-        <p className="my-2 text-center">
-          Some of the projects I have worked on, I offer best services and
-          solutions
-        </p>
-      </div> */}
+
       <div
         className={`${styles.paddingY} grid md:grid-cols-2 lg:grid-cols-3 gap-6`}
       >

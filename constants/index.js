@@ -77,6 +77,19 @@ export const navLinks = [
   // },
 ];
 
+export const roles = [
+  {
+    position: "Software Developer",
+    company: "Systech Africa",
+    period: "April 2024 - Present",
+  },
+  {
+    position: "Software Developer Intern",
+    company: "Systech Africa",
+    period: "August 2023 - March 2024",
+  },
+];
+
 export const homeSkills = [
   {
     id: 1,
