@@ -11,10 +11,10 @@ import Link from "next/link";
 const AboutComponent = () => {
   return (
     <>
-      <section className={`${styles.paddingY} w-[70%] max-lg:w-5/6 mx-auto`}>
+      <section className={`${styles.paddingY} w-[80%] max-lg:w-5/6 mx-auto`}>
         {/* title */}
         <div className=" pb-12  max-lg:mb-10 gap-8 flex max-lg:flex-col">
-          <div className="w-[65%] max-lg:w-[100%]">
+          <div className="w-[60%] max-lg:w-[100%]">
             <div className=" mx-auto">
               <h2 className="headingTwoStart">About Me</h2>
               <p className="my-5 text-sm">
@@ -58,7 +58,7 @@ const AboutComponent = () => {
           </div>
 
           {/* image */}
-          <div className="w-[45%] max-lg:w-[100%]">
+          <div className="w-[40%] max-lg:w-[100%]">
             <div className="bg-gray-50 shadow-md py-10 w-full mx-auto flex gap-6 flex-col justify-center items-center rounded-lg h-full">
               <Image
                 src={Musili}
