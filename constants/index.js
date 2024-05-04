@@ -23,7 +23,6 @@ import git from "public/git.svg";
 import html from "public/html.svg";
 import java from "public/java.svg";
 import js from "public/js.svg";
-import maven from "public/maven.png";
 import mongo from "public/mongo.svg";
 import mysql from "public/mysql.svg";
 import NextJS from "public/NextJS.svg";
@@ -32,6 +31,9 @@ import redux from "public/redux.svg";
 import springBoot from "public/springBoot.svg";
 import tailwind from "public/tailwind.svg";
 import ts from "public/ts.svg";
+import postgres from "public/icons/postgres.png";
+import k8 from "public/icons/k8.png";
+import docker from "public/icons/docker.png";
 
 //contact icons
 import mail from "public/mail.png";
@@ -201,8 +203,16 @@ export const projectCards = [
 
 export const tools = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
     name: "Javascript",
     icon: js,
+  },
+  {
+    name: "Spring boot",
+    icon: springBoot,
   },
   {
     name: "React",
@@ -229,6 +239,10 @@ export const tools = [
     icon: redux,
   },
   {
+    name: "Postgres",
+    icon: postgres,
+  },
+  {
     name: "MongoDB",
     icon: mongo,
   },
@@ -249,17 +263,15 @@ export const tools = [
     icon: git,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "Docker",
+    icon: docker,
   },
   {
-    name: "Spring boot",
-    icon: springBoot,
+    name: "Kubernetes",
+    icon: k8,
   },
-  {
-    name: "Apache Maven",
-    icon: maven,
-  },
+
+
   {
     name: "Adobe XD",
     icon: adobe,

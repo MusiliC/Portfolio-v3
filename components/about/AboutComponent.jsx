@@ -18,17 +18,17 @@ const AboutComponent = () => {
             <div className=" mx-auto">
               <h2 className="headingTwoStart">About Me</h2>
               <p className="my-5 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                fugit voluptate, asperiores modi sit quidem molestias autem, aut
-                quas dolorum iure consectetur libero itaque? Eveniet modi
-                aperiam autem sapiente tempora. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Aspernatur, voluptatibus?
+                I am Brian Musili. I graduated with a bachelor's degree in
+                Computer Science from Dedan Kimathi University Of technology
+                where I laid the foundation for my career in
+                technology.
+                <br /><br /> I'm currently a Software Developer working with
+                Java, Javascript, Jakarta EE, Spring boot, Sencha extjs,
+                ReactJs, NodeJs, relational & non-relational databases which gives me 
+                a solid understanding of both frontend and backend.
                 <br />
                 <br />
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci itaque beatae qui recusandae saepe nam, explicabo sunt
-                laudantium deleniti sed assumenda quisquam laboriosam
-                consectetur dignissimos maxime officiis facilis eum consequatur.
+                I embrace the principles of DevOps and Microservices, seamlessly integrating development and operations to streamline processes. As a mentor and team player, I'm dedicated to empowering others and building strong, cohesive teams.
               </p>
             </div>
             <div className="">
@@ -67,7 +67,7 @@ const AboutComponent = () => {
               />
               <div className="text-center">
                 <p className="font-semibold text-lg">Brian Musili</p>
-                <p className="font-semibold">Software/Web developer</p>
+                <p className="font-semibold">Software developer</p>
               </div>
               <div className="flex">
                 <Link href="Musili_Resume.pdf" rel="noopener noreferrer">
