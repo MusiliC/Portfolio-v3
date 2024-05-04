@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className="border py-5 px-3 shadow-md w-[320px] rounded-md h-[220px]  flex flex-col items-center justify-around">
+    <div className="border py-5 bg-gray-50 px-3 shadow-md w-[320px] rounded-md h-[220px]  flex flex-col items-center justify-around">
       <Image
         src={service.icon}
         alt="image"

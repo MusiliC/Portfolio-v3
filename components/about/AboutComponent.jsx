@@ -11,21 +11,59 @@ import Link from "next/link";
 const AboutComponent = () => {
   return (
     <>
-      <section className={`${styles.paddingY} w-5/6 mx-auto`}>
+      <section className={`${styles.paddingY} w-[70%] max-lg:w-5/6 mx-auto`}>
         {/* title */}
+        <div className=" pb-12  max-lg:mb-10 gap-8 flex max-lg:flex-col">
+          <div className="w-[65%] max-lg:w-[100%]">
+            <div className=" mx-auto">
+              <h2 className="headingTwoStart">About Me</h2>
+              <p className="my-5 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                fugit voluptate, asperiores modi sit quidem molestias autem, aut
+                quas dolorum iure consectetur libero itaque? Eveniet modi
+                aperiam autem sapiente tempora. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aspernatur, voluptatibus?
+                <br />
+                <br />
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci itaque beatae qui recusandae saepe nam, explicabo sunt
+                laudantium deleniti sed assumenda quisquam laboriosam
+                consectetur dignissimos maxime officiis facilis eum consequatur.
+              </p>
+            </div>
+            <div className="">
+              <div>
+                <p className="text-sm font-semibold">Latest roles</p>
+                {roles?.map((role) => (
+                  <div className="flex gap-1 my-5 items-center justify-between">
+                    <div className="w-[50px]">
+                      <Image
+                        src={dev}
+                        alt={`s/w`}
+                        className="h-[35px] w-[35px]  object-cover"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-semibold text-sm">{role.position}</p>
+                      <p className=" text-sm">{role.company}</p>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm">{role.period}</p>
+                    </div>
+                  </div>
+                ))}
+                {/* roles */}
+              </div>
+            </div>
+          </div>
 
-        <div className="grid max-lg:grid-cols-1 grid-cols-2 my-10 gap-5 min-h-[70vh]">
-          {/* outer container */}
-          {/* image card */}
-
-          <div
-            className={`max-lg:row-span-1  row-span-2 max-lg:w-full w-[80%] mx-auto  `}
-          >
-            <div className="bg-gray-50 shadow-md py-10 w-full flex gap-6 flex-col justify-center items-center rounded-lg h-full">
+          {/* image */}
+          <div className="w-[45%] max-lg:w-[100%]">
+            <div className="bg-gray-50 shadow-md py-10 w-full mx-auto flex gap-6 flex-col justify-center items-center rounded-lg h-full">
               <Image
                 src={Musili}
                 alt="Musili"
-                className="rounded-full h-[200px] w-[200px] object-cover"
+                className="rounded-full h-[250px] w-[250px] object-cover"
               />
               <div className="text-center">
                 <p className="font-semibold text-lg">Brian Musili</p>
@@ -36,58 +74,6 @@ const AboutComponent = () => {
                   <Button text="Download Resume" />
                 </Link>
               </div>
-            </div>
-          </div>
-
-          {/* about part */}
-          <div className="bg-gray-50 shadow-md rounded-lg p-5">
-            {/* <div>
-              <h2 className="text-xl font-bold">About Me</h2>
-            </div> */}
-            <div className="mt-2 text-sm">
-              <h2 className="mb-4 text-2xl text-start font-bold">About Me</h2>
-
-              <p>
-                My name is Brian Musili a software/web developer from Nairobi,
-                Kenya.
-              </p>
-
-              <br />
-
-              <p className="text-sm">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veniam, quos, asperiores atque fugit velit sed, voluptatem sint
-                architecto nisi similique laborum necessitatibus a temporibus
-                est tempora placeat iure voluptate minima ut? Sunt aperiam et
-                tempora ut eligendi expedita deserunt ea temporibus corrupti
-                laudantium saepe, exercitationem odit quidem dignissimos quas
-                incidunt?
-              </p>
-            </div>
-          </div>
-
-          <div className=" bg-gray-50 shadow-md  rounded-lg p-5">
-            <div>
-              <p className="text-sm font-semibold">Latest roles</p>
-              {roles?.map((role) => (
-                <div className="flex gap-1 my-4 items-center justify-between">
-                  <div className="w-[50px]">
-                    <Image
-                      src={dev}
-                      alt={`s/w`}
-                      className="h-[40px] w-[40px]  object-cover"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-semibold text-sm">{role.position}</p>
-                    <p className=" text-sm">{role.company}</p>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm">{role.period}</p>
-                  </div>
-                </div>
-              ))}
-              {/* roles */}
             </div>
           </div>
         </div>
