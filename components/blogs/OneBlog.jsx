@@ -4,7 +4,7 @@ import React from "react";
 
 const OneBlog = ({ title, desc, image, url, category }) => {
   return (
-    <div className="  mx-auto  hover:bg-gray-50 cursor-pointer  rounded-md ">
+    <div className="w-full  mx-auto  hover:bg-gray-50 cursor-pointer  rounded-md ">
       <Link  href={url} rel="noopener noreferrer" target="_blank">
       <div>
         <Image src={image} alt={title} className="h-[180px] w-full " />
