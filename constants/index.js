@@ -1,8 +1,6 @@
 import web from "public/web.jpg";
 import ux from "public/ux.jpg";
-import atomic from "public/atomic.jpg";
-import mindset from "public/mindset.jpg";
-import positive from "public/positive.jpg";
+
 
 //web projects
 import gym from "public/gym.png";
@@ -335,23 +333,6 @@ export const webProjects = [
   },
 ];
 
-export const articles = [
-  {
-    image: atomic,
-    name: "Atomic Habits",
-    desc: "Habits are patterns of behavior that you’ve repeated enough to become automatic. The most helpful function of atomic habits is to solve the problems of your life with as little effort as possible. The science of habit formation involves four things.....",
-  },
-  {
-    image: mindset,
-    name: "Mindset the new psychology of success",
-    desc: "Mindset: The New Psychology of Success is a book by Carol S. Dweck about human thoughts, and how these thoughts can greatly influence the way we live our everyday lives. This book is written in the form of a self-help book, so readers will find many interesting and educational tidbits of advice on how to live the best life possible....",
-  },
-  {
-    image: positive,
-    name: "The power of positive thinking",
-    desc: "By Norman vincent - updating soon...",
-  },
-];
 
 export const contactIcons = [
   {
