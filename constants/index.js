@@ -54,6 +54,10 @@ import linkFooter from "public/icons/linkedin.png";
 import githubFooter from "public/icons/git.png";
 import fiverFooter from "public/icons/fiver.png";
 
+//blogs images
+import spring from "public/images/spring.png";
+import blog_default from "public/images/blog_default.jpg";
+
 export const navLinks = [
   {
     id: "/",
@@ -67,14 +71,11 @@ export const navLinks = [
     id: "/about",
     title: "About Me",
   },
-  // {
-  //   id: "/articles",
-  //   title: "Articles",
-  // },
-  // {
-  //   id: "blogs",z
-  //   title: "Blogs",
-  // },
+
+  {
+    id: "/blogs",
+    title: "Blogs"
+  },
 ];
 
 export const roles = [
@@ -330,6 +331,37 @@ export const webProjects = [
     desc: "Frontend Design for a bank website, responsive and customizable",
     link: "https://bankappsite-web.netlify.app/",
     github: "https://github.com/MusiliC/bank-app-website",
+  },
+];
+
+export const blogs = [
+  {
+    image: spring,
+    title: "Spring Cloud Config",
+    desc: "Spring Cloud Config provides server-side and client-side support for externalized configuration in a distributed system",
+    category: "Spring",
+    url: "https://medium.com/@mastermusili/microservices-spring-cloud-e9109bbe2606",
+  },
+  {
+    image: blog_default,
+    title: "Eureka Discovery Service",
+    desc: "Microservices, updating the blog soon",
+    category: "Spring",
+    url: "#",
+  },
+  {
+    image: blog_default,
+    title: "React Blog",
+    desc: "React Hooks, updating the blog soon",
+    category: "React",
+    url: "#",
+  },
+  {
+    image: blog_default,
+    title: "Java",
+    desc: "Java izoz9, updating the blog soon",
+    category: "Java",
+    url: "#",
   },
 ];
 
