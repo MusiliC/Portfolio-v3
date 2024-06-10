@@ -58,6 +58,7 @@ import fiverFooter from "public/icons/fiver.png";
 
 //blogs images
 import spring from "public/images/spring.png";
+import eureka from "public/images/eureka.png";
 import blog_default from "public/images/blog_default.jpg";
 
 export const navLinks = [
@@ -363,11 +364,11 @@ export const blogs = [
     url: "https://medium.com/@mastermusili/microservices-spring-cloud-e9109bbe2606",
   },
   {
-    image: blog_default,
+    image: eureka,
     title: "Eureka Discovery Service",
-    desc: "Microservices, updating the blog soon",
+    desc: "Service Discovery is one of the key tenets of a microservice-based architecture.",
     category: "Spring",
-    url: "#",
+    url: "https://medium.com/@mastermusili/spring-service-discovery-eureka-923f605949f5",
   },
   {
     image: blog_default,
