@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import contact from "public/contact.jpg";
 import { contactIcons } from "@/constants";
 import toast, { Toaster } from "react-hot-toast";
+import ContactInformation from "../shared/ContactInformation";
 
 const ContactComponent = () => {
   const [values, setValues] = useState({
@@ -20,6 +21,8 @@ const ContactComponent = () => {
   const handleChange = (e) => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
+
+
 
   const handleSubmit = async (e) => {
     try {
@@ -54,7 +57,7 @@ const ContactComponent = () => {
         {/* title header */}
 
         <div
-          className={`${styles.paddingY} bg-primary-two-100  px-5 rounded-sm  lg:w-1/2 ml-auto`}
+          className={`${styles.paddingY} bg-primary-two-100 max-lg:mb-4  px-5 rounded-sm  lg:w-1/2 ml-auto`}
         >
           <h1 className=" font-bold font-poppins md:text-[52px] text-[32px] md:leading-[70px] leading-[40px]">
             Let's <br /> Connect
@@ -135,29 +138,9 @@ const ContactComponent = () => {
             </form>
           </div>
         </div>
-
-        {/* <div
-          className={` ${styles.paddingY} w-full gap-2 flex flex-col md:flex-row justify-around  items-start md:items-center`}
-        >
-          {contactIcons.map((item) => (
-            <div
-              className={`py-4 md:py-10  flex md:flex-col gap-2 items-center`}
-            >
-              <div className=" w-[50px] flex items-center justify-center h-[50px]  bg-secondary-500 rounded-full">
-                <Image
-                  src={item.icon}
-                  alt={item.name}
-                  className="h-[30px] w-[30px]"
-                />
-              </div>
-              <h1
-                className={`font-poppins text-[13px]  lg:text-[16px] tracking-wide  leading-[31px] font-semibold`}
-              >
-                {item.name}
-              </h1>
-            </div>
-          ))}
-        </div> */}
+        <div>
+          <ContactInformation />
+        </div>
       </div>
       <Toaster />
     </section>

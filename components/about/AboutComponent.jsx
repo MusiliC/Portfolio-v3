@@ -1,3 +1,4 @@
+"use client"
 import styles from "@/style";
 import Image from "next/image";
 import React from "react";
@@ -7,6 +8,7 @@ import { roles, tools } from "@/constants";
 import dev from "/public/icons/dev.svg";
 
 import Link from "next/link";
+import ContactInformation from "../shared/ContactInformation";
 
 const AboutComponent = () => {
   return (
@@ -77,6 +79,8 @@ const AboutComponent = () => {
             </div>
           </div>
         </div>
+
+        <ContactInformation/>
       </section>
 
       {/* skills and experience */}
@@ -108,6 +112,7 @@ const AboutComponent = () => {
             ))}
           </div>
         </div>
+
       </section>
     </>
   );

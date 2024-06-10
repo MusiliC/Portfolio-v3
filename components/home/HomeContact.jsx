@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import contact from "public/images/chat.svg";
 import { contactIcons } from "@/constants";
 import toast, { Toaster } from "react-hot-toast";
+import ContactInformation from "../shared/ContactInformation";
 
 const HomeContact = () => {
   const [values, setValues] = useState({
@@ -51,16 +52,16 @@ const HomeContact = () => {
   return (
     <section className={`py-10 w-full `}>
       <div className={` w-5/6 mx-auto`}>
-      <div className="lg:w-3/4 mx-auto">
-        <h2 className="text-center headingTwo">Say Hi!</h2>
-        <p className="my-2 text-center">
-          Let's have a chat, so message away!
-        </p>
-      </div>
+        <ContactInformation />
+        <div className="lg:w-3/4 mx-auto">
+          <h2 className="text-center headingTwo">Say Hi!</h2>
+          <p className="my-2 text-center">
+            Let's have a chat, so message away!
+          </p>
+        </div>
         <div
           className={`${styles.paddingY} flex flex-row items-center max-lg:flex-col max-lg:gap-5 gap-20`}
         >
-
           {/* image */}
           <div className="flex-1 ">
             <Image src={contact} alt="musili" />

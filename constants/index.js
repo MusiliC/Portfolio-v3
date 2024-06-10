@@ -37,6 +37,8 @@ import docker from "public/icons/docker.png";
 import mail from "public/mail.png";
 import location from "public/location.png";
 import phone from "public/phone.png";
+import fiver from "public/icons/fiver.png";
+import message from "public/icons/message.svg";
 
 //home page skills
 import homeWeb from "public/icons/web.png";
@@ -166,6 +168,24 @@ export const footerLinks = [
       },
       { name: "+254768687334", link: "tel:+254768687334" },
     ],
+  },
+];
+
+export const contactDetails = [
+  {
+    name: "Email",
+    link: "musilibrian07@gmail.com ",
+    icon: mail,
+  },
+  {
+    name: "Whats App",
+    link: "+254768687334",
+    icon: message,
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/musili_brian?up_rollout=true",
+    icon: fiver
   },
 ];
 

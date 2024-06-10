@@ -26,7 +26,7 @@ const Blogs = () => {
             href={blogs[0]?.url}
             rel="noopener noreferrer"
             target="_blank"
-            className="underline font-semibold"
+            className="underline italic "
           >
             Read More
           </Link>
