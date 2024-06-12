@@ -371,11 +371,11 @@ export const blogs = [
     url: "https://medium.com/@mastermusili/spring-service-discovery-eureka-923f605949f5",
   },
   {
-    image: blog_default,
-    title: "React Blog",
-    desc: "React Hooks, updating the blog soon",
-    category: "React",
-    url: "#",
+    image: spring,
+    title: "Implementing API Gateway, Load Balancing",
+    desc: "Its an intelligent routing provided by the spring cloud used in a situation where it exposes one port and server to run all instances",
+    category: "Spring",
+    url: "https://medium.com/@mastermusili/spring-microservices-implementing-api-gateway-and-load-balancing-76e54cc16139",
   },
   {
     image: blog_default,
