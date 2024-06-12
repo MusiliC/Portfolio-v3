@@ -373,7 +373,7 @@ export const blogs = [
   {
     image: spring,
     title: "Implementing API Gateway, Load Balancing",
-    desc: "Its an intelligent routing provided by the spring cloud used in a situation where it exposes one port and server to run all instances",
+    desc: "Lets understand api gateway and load balancing, and their implementation",
     category: "Spring",
     url: "https://medium.com/@mastermusili/spring-microservices-implementing-api-gateway-and-load-balancing-76e54cc16139",
   },
