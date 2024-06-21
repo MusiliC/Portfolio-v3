@@ -16,13 +16,13 @@ export default async function sitemap() {
       url: "https://musilidev.xyz/portfolio",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: "https://musilidev.xyz/about",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
+      priority: 0.6,
     },
   ];
 }
