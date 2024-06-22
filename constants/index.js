@@ -60,6 +60,7 @@ import fiverFooter from "public/icons/fiver.png";
 import spring from "public/images/spring.png";
 import eureka from "public/images/eureka.png";
 import blog_default from "public/images/blog_default.jpg";
+import react_blog from "public/images/react_blog.jpg";
 
 export const navLinks = [
   {
@@ -378,11 +379,11 @@ export const blogs = [
     url: "https://medium.com/@mastermusili/spring-microservices-implementing-api-gateway-and-load-balancing-76e54cc16139",
   },
   {
-    image: blog_default,
-    title: "Java",
-    desc: "Java izoz9, updating the blog soon",
-    category: "Java",
-    url: "#",
+    image: react_blog,
+    title: "Simple React Accordion",
+    desc: "Understanding basics in react components, props and state management",
+    category: "React",
+    url: "https://medium.com/@mastermusili/simple-react-accordion-component-props-children-props-e0f077c4d8fd",
   },
 ];
 
