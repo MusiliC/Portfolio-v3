@@ -360,9 +360,16 @@ export const blogs = [
   {
     image: react_blog,
     title: "React Behind the Scenes",
-    desc: "A small series pf articles of how react works behind the scenes and renders its element to actual DOM. Part one of the series ",
+    desc: "A small series of articles of how react works behind the scenes and renders its element to actual DOM. Part one of the series ",
     category: "React",
     url: "https://medium.com/@mastermusili/how-react-works-behind-the-scenes-part-1-450d9e9ff9f2",
+  },
+  {
+    image: react_blog,
+    title: "React Behind the Scenes: Render Phase",
+    desc: "The actual render phase in react, how it works creation of virtual DOM and updating the actual DOM. Part two of the series ",
+    category: "React",
+    url: "https://medium.com/@mastermusili/how-react-works-the-render-phase-part-2-318360b23cdb",
   },
   {
     image: spring,
