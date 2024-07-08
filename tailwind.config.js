@@ -16,7 +16,8 @@ module.exports = {
         "primary-two-300": "#326E6C",
         "secondary-two-100": "#FC4F00",
       },
-      
+
+      // backup - primary color - F8F7F4
     },
   },
   plugins: [],

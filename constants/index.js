@@ -358,6 +358,13 @@ export const webProjects = [
 
 export const blogs = [
   {
+    image: react_blog,
+    title: "React Behind the Scenes",
+    desc: "A small series pf articles of how react works behind the scenes and renders its element to actual DOM. Part one of the series ",
+    category: "React",
+    url: "https://medium.com/@mastermusili/how-react-works-behind-the-scenes-part-1-450d9e9ff9f2",
+  },
+  {
     image: spring,
     title: "Spring Cloud Config",
     desc: "Spring Cloud Config provides server-side and client-side support for externalized configuration in a distributed system",
