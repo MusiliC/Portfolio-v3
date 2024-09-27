@@ -3,12 +3,12 @@
 import styles from "@/style";
 import Image from "next/image";
 import React, { useState } from "react";
-import contact from "public/contact.jpg";
+import contact from "public/images/chat.svg";
 import { contactIcons } from "@/constants";
 import toast, { Toaster } from "react-hot-toast";
 import ContactInformation from "../shared/ContactInformation";
 
-const ContactComponent = () => {
+const HomeContact = () => {
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -21,8 +21,6 @@ const ContactComponent = () => {
   const handleChange = (e) => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
-
 
   const handleSubmit = async (e) => {
     try {
@@ -54,33 +52,26 @@ const ContactComponent = () => {
   return (
     <section className={`py-10 w-full `}>
       <div className={` w-5/6 mx-auto`}>
-        {/* title header */}
-
-        <div
-          className={`${styles.paddingY} bg-primary-two-100 max-lg:mb-4  px-5 rounded-sm  lg:w-1/2 ml-auto`}
-        >
-          <h1 className=" font-bold font-poppins md:text-[52px] text-[32px] md:leading-[70px] leading-[40px]">
-            Let's <br /> Connect
-          </h1>
+        <ContactInformation />
+        <div className="lg:w-3/4 mx-auto">
+          <h2 className="text-center headingTwo">Say Hi!</h2>
+          <p className="my-2 text-center">
+            Let's have a chat, so message away!
+          </p>
         </div>
-
         <div
-          className={`${styles.paddingY} flex md:flex-row flex-col gap-5 lg:gap-2`}
+          className={`${styles.paddingY} flex flex-row items-center max-lg:flex-col max-lg:gap-5 gap-20`}
         >
           {/* image */}
           <div className="flex-1 ">
-            <Image
-              src={contact}
-              alt="musili"
-              className=" md:h-[500px] object-cover  md:w-[400px]"
-            />
+            <Image src={contact} alt="musili" />
           </div>
 
           {/* form */}
-          <div className="flex-1">
+          <div className="flex-1 w-full ">
             <form
               action=""
-              className="w-full md:h-[500px] flex flex-col gap-2 md:gap-1"
+              className="w-full flex flex-col gap-1"
               onSubmit={handleSubmit}
             >
               <label htmlFor="" className="formLabel">
@@ -123,9 +114,9 @@ const ContactComponent = () => {
                 name="body"
                 id=""
                 required
-                className=" p-2 py-4 text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm"
+                className=" p-2  text-sm outline-none  border bg-[#FBFAFB] border-gray-200 rounded-sm"
                 cols="20"
-                rows="10"
+                rows="4"
                 value={values.body}
                 onChange={handleChange}
               ></textarea>
@@ -138,13 +129,10 @@ const ContactComponent = () => {
             </form>
           </div>
         </div>
-        <div>
-          <ContactInformation />
-        </div>
       </div>
       <Toaster />
     </section>
   );
 };
 
-export default ContactComponent;
+export default HomeContact;

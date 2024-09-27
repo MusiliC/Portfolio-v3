@@ -5,10 +5,21 @@ import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata = {
-  title: "Musili",
-  description: "Created by Musili",
+  title: {
+    default: "Musili Dev",
+    template: "%s | Musili",
+  },
+  description: "Software Engineer",
+  keywords: [
+    "Web Design and Development",
+    "DevOps",
+    "Software Development",
+    "Musili Dev",
+  ],
 };
+
 
 export default function RootLayout({ children }) {
   return (

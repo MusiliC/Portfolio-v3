@@ -1,71 +1,74 @@
 import React from "react";
-import styles from "@/style";
-import { footerLinks } from "@/constants";
+import copyrightSign from "public/icons/copyright-sign.svg";
+import { footerLinks, socialMedia } from "@/constants";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="bg-primary-100">
-      <section className={`${styles.flexCenter}  pt-4 w-5/6 mx-auto `}>
-        <div
-          className={`${styles.flexStart} gap-6 md:flex-row flex-col mb-8 w-full`}
-        >
-          {/* phone number and email */}
-          <div className="flex flex-col  justify-start flex-1 mr-10 ">
-            <p className={`${styles.paragraph} mt-4 text-white max-w-[310px]`}>
-              MUSILI
-            </p>
-            <p className={`${styles.paragraph} mt-2 text-white max-w-[310px]`}>
-              +254 768687334
-            </p>
-            <p className={`${styles.paragraph} mt-2 text-white max-w-[310px]`}>
-              musilibrian07@gmail.com
-            </p>
+    <footer className="bg-gray-800">
+      <section className="screen py-10">
+        <div className="flex text-white justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+          <div className="flex flex-col items-start">
+            <div className="flex items-center gap-5 mt-8">
+              {socialMedia.map((icon) => (
+                <div
+                  className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
+                  key={icon.alt}
+                >
+                  <Link
+                    href={icon.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={icon.src}
+                      alt={icon.alt}
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* section 2 - links */}
-
-          <div className="flex-[1.5]  w-full flex flex-row justify-between flex-wrap md:mt-0 mt:10">
-            {footerLinks.map((link) => (
-              <div
-                key={link.key}
-                className="flex flex-col ss:my-0 my-4 min-w-[150px]"
-              >
-                <h4
-                  className={`${styles.paragraph} text-white`}
-                >
-                  {link.title}
+          <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+            {footerLinks.map((section) => (
+              <div key={section.title}>
+                <h4 className=" text-2xl leading-normal font-medium mb-6 text-white">
+                  {section.title}
                 </h4>
-                <ul className="mt-4">
-                  {link.links.map((eachLink) => (
-                    <Link href={eachLink.link}>
-                      <li
-                        key={eachLink.name}
-                        className={`${styles.paragraph} py-1 text-white`}
-                      >
-                        {eachLink.name}
-                      </li>
-                    </Link>
+                <ul>
+                  {section.links.map((link) => (
+                    <li
+                      className="mt-3  text-base leading-normal text-white-400 hover:text-slate-gray"
+                      key={link.name}
+                    >
+                      <a href={link.link}>{link.name}</a>
+                    </li>
                   ))}
                 </ul>
               </div>
             ))}
           </div>
         </div>
-      </section>
 
-      {/* bottom section */}
-      {/* Last part copyright */}
-      <div className="flex pb-6 flex-col md:flex-row items-center justify-between w-full pt-0 md:flex-6  border-t-[1px] border-t-[#3f3r45]">
-        <div className="w-5/6 mx-auto">
-          <p
-            className={`${styles.paragraph} text-center pt-3 text-white`}
-          >
-            @2023 Musili. Made from scratch. All rights reserved
-          </p>
+        <div className="flex text-white justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+          <div className="flex flex-1 justify-start items-center gap-2  cursor-pointer">
+            <Image
+              src={copyrightSign}
+              alt="copyright sign"
+              width={20}
+              height={20}
+              className="rounded-full m-0"
+            />
+            <p>Copyright. All rights reserved.</p>
+          </div>
+          <p className=" cursor-pointer">Terms & Conditions</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </footer>
   );
 };
 

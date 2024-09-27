@@ -1,15 +1,6 @@
-import approve from "public/approve.png";
 import web from "public/web.jpg";
 import ux from "public/ux.jpg";
-import atomic from "public/atomic.jpg";
-import mindset from "public/mindset.jpg";
-import positive from "public/positive.jpg";
 
-//ux projects
-import eoe from "public/eoe.png";
-import eoe1 from "public/eoe1.png";
-import eoe2 from "public/eoe2.png";
-import eoe3 from "public/eoe3.png";
 
 //web projects
 import gym from "public/gym.png";
@@ -18,6 +9,7 @@ import dashboard from "public/dashboard.png";
 import bankAccount from "public/bankAccount.png";
 import bookReview from "public/bookReview.png";
 import KUSA from "public/KUSA.png";
+import sentelemo from "public/images/sentelemo.png";
 
 //tools
 
@@ -29,7 +21,6 @@ import git from "public/git.svg";
 import html from "public/html.svg";
 import java from "public/java.svg";
 import js from "public/js.svg";
-import maven from "public/maven.png";
 import mongo from "public/mongo.svg";
 import mysql from "public/mysql.svg";
 import NextJS from "public/NextJS.svg";
@@ -38,19 +29,38 @@ import redux from "public/redux.svg";
 import springBoot from "public/springBoot.svg";
 import tailwind from "public/tailwind.svg";
 import ts from "public/ts.svg";
-
-//design projects
+import postgres from "public/icons/postgres.png";
+import k8 from "public/icons/k8.png";
+import docker from "public/icons/docker.png";
 
 //contact icons
 import mail from "public/mail.png";
 import location from "public/location.png";
 import phone from "public/phone.png";
+import fiver from "public/icons/fiver.png";
+import message from "public/icons/message.svg";
 
 //home page skills
-import homeWeb from "public/icons/web.png"
-import homeSoft from "public/icons/soft.png"
-import homeDevops from "public/icons/devops.png"
-import homeUx from "public/icons/ux.png"
+import homeWeb from "public/icons/web.png";
+import homeSoft from "public/icons/soft.png";
+import homeDevops from "public/icons/devops.png";
+import homeUx from "public/icons/ux.png";
+
+//service
+import webPri from "public/icons/webPri.png";
+import devPri from "public/icons/devPri.png";
+import softPri from "public/icons/softPri.png";
+
+//footer social icons
+import linkFooter from "public/icons/linkedin.png";
+import githubFooter from "public/icons/git.png";
+import fiverFooter from "public/icons/fiver.png";
+
+//blogs images
+import spring from "public/images/spring.png";
+import eureka from "public/images/eureka.png";
+import blog_default from "public/images/blog_default.jpg";
+import react_blog from "public/images/react_blog.jpg";
 
 export const navLinks = [
   {
@@ -65,67 +75,86 @@ export const navLinks = [
     id: "/about",
     title: "About Me",
   },
-  // {
-  //   id: "/articles",
-  //   title: "Articles",
-  // },
-  // {
-  //   id: "blogs",z
-  //   title: "Blogs",
-  // },
+
+  {
+    id: "/blogs",
+    title: "Blogs"
+  },
+];
+
+export const roles = [
+  {
+    position: "Software Developer",
+    company: "Systech Africa",
+    period: "April 2024 - Present",
+  },
+  {
+    position: "Software Developer Intern",
+    company: "Systech Africa",
+    period: "August 2023 - March 2024",
+  },
 ];
 
 export const homeSkills = [
   {
     id: 1,
     title: "Software Development",
-    icon: homeSoft
+    icon: homeSoft,
   },
   {
     id: 2,
     title: "Web Development",
-    icon: homeWeb
+    icon: homeWeb,
   },
   {
     id: 3,
     title: "DevOps",
-    icon: homeDevops
+    icon: homeDevops,
   },
   {
     id: 4,
     title: "UX Design",
-    icon: homeUx
+    icon: homeUx,
+  },
+];
+
+export const socialMedia = [
+  {
+    src: linkFooter,
+    alt: "linkedin logo",
+    link: "https://www.linkedin.com/in/brian-musili-405b1220a/",
+  },
+  { src: githubFooter, alt: "github logo", link: "https://github.com/MusiliC" },
+  {
+    src: fiverFooter,
+    alt: "fiver logo",
+    link: "https://www.fiverr.com/musili_brian?up_rollout=true",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Services",
     links: [
-      {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "About Me",
-        link: "/about",
-      },
-      {
-        name: "Portfolio",
-        link: "/portfolio",
-      },
-      {
-        name: "Blogs",
-        link: "#",
-      },
-      {
-        name: "Articles",
-        link: "/articles",
-      },
+      { name: "Web Development", link: "#" },
+      { name: "Responsive Web Design", link: "#" },
+      { name: "Software Development", link: "#" },
+      { name: "DevOps", link: "#" },
+      { name: "UX Design", link: "#" },
     ],
   },
   {
-    title: "Social Media",
+    title: "Links",
+    links: [
+      { name: "Home", link: "" },
+      { name: "Projects", link: "#" },
+      { name: "Services", link: "#" },
+      { name: "Blogs", link: "#" },
+      { name: "Contact", link: "#" },
+    ],
+  },
+  {
+    title: "Get in touch",
     links: [
       {
         name: "Linkedin",
@@ -136,37 +165,47 @@ export const footerLinks = [
         link: "https://github.com/MusiliC",
       },
       {
-        name: "Twitter",
-        link: "https://twitter.com/Musili_14",
-      },
-      // {
-      //   name: "Instagram",
-      //   link: "#",
-      // },
-      {
         name: "Fiverr",
         link: "https://www.fiverr.com/musili_brian?up_rollout=true",
       },
+      { name: "+254768687334", link: "tel:+254768687334" },
     ],
+  },
+];
+
+export const contactDetails = [
+  {
+    name: "Email",
+    link: "musilibrian07@gmail.com ",
+    icon: mail,
+  },
+  {
+    name: "Whats App",
+    link: "+254768687334",
+    icon: message,
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/musili_brian?up_rollout=true",
+    icon: fiver
   },
 ];
 
 export const services = [
   {
-    title: "Web and Mobile App Development",
-    icon: approve,
-  },
-  {
-    title: "Responsive Web Design",
-    icon: approve,
-  },
-  {
-    title: "UX Design",
-    icon: approve,
-  },
-  {
     title: "Software Development",
-    icon: approve,
+    icon: softPri,
+    body: "I design, build, and maintain software applications, ensuring they meet client requirements and solve problems effectively.",
+  },
+  {
+    title: "Web Design and Development",
+    icon: webPri,
+    body: "I specialize in creating responsive, user-friendly websites, integrating cutting-edge technologies for optimal performance.",
+  },
+  {
+    title: "DevOps",
+    icon: devPri,
+    body: "I orchestrate software delivery through DevOps practices, automate processes, and ensure efficient deployment and delivery.",
   },
 ];
 
@@ -185,8 +224,16 @@ export const projectCards = [
 
 export const tools = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
     name: "Javascript",
     icon: js,
+  },
+  {
+    name: "Spring boot",
+    icon: springBoot,
   },
   {
     name: "React",
@@ -213,6 +260,10 @@ export const tools = [
     icon: redux,
   },
   {
+    name: "Postgres",
+    icon: postgres,
+  },
+  {
     name: "MongoDB",
     icon: mongo,
   },
@@ -233,17 +284,15 @@ export const tools = [
     icon: git,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "Docker",
+    icon: docker,
   },
   {
-    name: "Spring boot",
-    icon: springBoot,
+    name: "Kubernetes",
+    icon: k8,
   },
-  {
-    name: "Apache Maven",
-    icon: maven,
-  },
+
+
   {
     name: "Adobe XD",
     icon: adobe,
@@ -251,16 +300,6 @@ export const tools = [
   {
     name: "Figma",
     icon: figma,
-  },
-];
-
-export const designProjects = [
-  {
-    id: 1,
-    image: eoe,
-    name: "EOE Foundation",
-    desc: "With collaboration with my team I came up with the design of Enock Opara Makokha Foundation which is an NGO dedicated to providing quality education, healthcare, clean water, security and agribusiness opportunities to the community ",
-    imageArray: [eoe, eoe1, eoe2, eoe3],
   },
 ];
 
@@ -273,19 +312,26 @@ export const webProjects = [
     link: "https://a4718aa7.gym-typescript-61v.pages.dev/",
   },
   {
-    image: Auth,
-    name: "Authentication System",
-    desc: "Project with advanced features such as email verification and password reset by use of jwt",
-    github:
-      "https://github.com/MusiliC/authentication-email-verification-password-reset",
-    link: "https://authentication-email-verification-password-reset.vercel.app/",
+    image: sentelemo,
+    name: "Sentelemo Engineering",
+    github: "https://github.com/MusiliC/sentelmo-v2",
+    link: "https://sentelmo.co.ke/",
   },
+
   {
     image: dashboard,
     name: "Admin Dashboard",
     desc: "Admin Dashboard design with calendar, theming and graphs",
     github: "https://github.com/MusiliC/admin-side-dashboard-theming-calendar",
     link: "https://advance-admin-dashboard.onrender.com/",
+  },
+  {
+    image: Auth,
+    name: "Authentication System",
+    desc: "Project with advanced features such as email verification and password reset by use of jwt",
+    github:
+      "https://github.com/MusiliC/authentication-email-verification-password-reset",
+    link: "https://authentication-email-verification-password-reset.vercel.app/",
   },
   {
     image: bookReview,
@@ -310,23 +356,51 @@ export const webProjects = [
   },
 ];
 
-export const articles = [
+export const blogs = [
   {
-    image: atomic,
-    name: "Atomic Habits",
-    desc: "Habits are patterns of behavior that you’ve repeated enough to become automatic. The most helpful function of atomic habits is to solve the problems of your life with as little effort as possible. The science of habit formation involves four things.....",
+    image: react_blog,
+    title: "React Behind the Scenes",
+    desc: "A small series of articles of how react works behind the scenes and renders its element to actual DOM. Part one of the series ",
+    category: "React",
+    url: "https://medium.com/@mastermusili/how-react-works-behind-the-scenes-part-1-450d9e9ff9f2",
   },
   {
-    image: mindset,
-    name: "Mindset the new psychology of success",
-    desc: "Mindset: The New Psychology of Success is a book by Carol S. Dweck about human thoughts, and how these thoughts can greatly influence the way we live our everyday lives. This book is written in the form of a self-help book, so readers will find many interesting and educational tidbits of advice on how to live the best life possible....",
+    image: react_blog,
+    title: "React Behind the Scenes: Render Phase",
+    desc: "The actual render phase in react, how it works creation of virtual DOM and updating the actual DOM. Part two of the series ",
+    category: "React",
+    url: "https://medium.com/@mastermusili/how-react-works-the-render-phase-part-2-318360b23cdb",
   },
   {
-    image: positive,
-    name: "The power of positive thinking",
-    desc: "By Norman vincent - updating soon...",
+    image: spring,
+    title: "Spring Cloud Config",
+    desc: "Spring Cloud Config provides server-side and client-side support for externalized configuration in a distributed system",
+    category: "Spring",
+    url: "https://medium.com/@mastermusili/microservices-spring-cloud-e9109bbe2606",
+  },
+  {
+    image: eureka,
+    title: "Eureka Discovery Service",
+    desc: "Service Discovery is one of the key tenets of a microservice-based architecture.",
+    category: "Spring",
+    url: "https://medium.com/@mastermusili/spring-service-discovery-eureka-923f605949f5",
+  },
+  {
+    image: spring,
+    title: "Implementing API Gateway, Load Balancing",
+    desc: "Lets understand api gateway and load balancing, and their implementation",
+    category: "Spring",
+    url: "https://medium.com/@mastermusili/spring-microservices-implementing-api-gateway-and-load-balancing-76e54cc16139",
+  },
+  {
+    image: react_blog,
+    title: "Simple React Accordion",
+    desc: "Understanding basics in react components, props and state management",
+    category: "React",
+    url: "https://medium.com/@mastermusili/simple-react-accordion-component-props-children-props-e0f077c4d8fd",
   },
 ];
+
 
 export const contactIcons = [
   {

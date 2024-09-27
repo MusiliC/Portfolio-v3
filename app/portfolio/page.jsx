@@ -1,11 +1,12 @@
-import PortfolioComponent from '@/components/portfolio/Portfolio'
+
+import WebProjects from '@/components/portfolio/WebProjects';
 import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div className=" min-h-[70vh]  lg:min-h-[85vh]">
-      <PortfolioComponent />
-    </div>
+   <section className="py-16">
+      <WebProjects />
+    </section>
   );
 }
 
